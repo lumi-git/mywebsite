@@ -1,4 +1,4 @@
-<div class="navbar bg-base-300 ">
+<div class="navbar bg-base-300">
 
   <div class="mx-1 ml-8 mr-28">
     <a class="btn ease-in duration-300 text-white bg-transparent" href="/">
@@ -25,3 +25,4 @@
   </div>
 
 </div>
+
