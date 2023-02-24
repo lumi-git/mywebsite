@@ -6,7 +6,7 @@ import Nav from '../../lib/Nav.svelte';
 
 <Nav />
 
-<h1>A simple project with p5</h1>
+<h1>A simple ballon project with p5</h1>
 
 <div class = " flex justify-center">
     
