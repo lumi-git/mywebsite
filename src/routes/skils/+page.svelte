@@ -4,4 +4,4 @@
 
 
 <Nav />
-<h1>projects</h1>
+<h1>skills</h1>
