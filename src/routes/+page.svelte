@@ -20,7 +20,7 @@ subject: document.getElementById("subject").value,
 
 <Nav />
 
-<h1 class = "text-center text-6xl text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500">RONAN TREMOUREUX</h1>
+<h1 class = "text-center text-6xl text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-10">RONAN TREMOUREUX</h1>
 
 <h2 class = "text-center text-2xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10">Web - Software Dev</h2>
 
