@@ -58,7 +58,7 @@ subject: document.getElementById("subject").value,
           <h2 class="card-title text-7xl ">CV</h2>
           <p>A summurized version of this website ? here is my cv !</p>
         <div class="card-actions">
-            <a class="btn btn-primary" download href = "CV_English.pdf" >Download</a>  
+            <a class="btn btn-primary" download href = "CV.pdf" >Download</a>  
         </div>
         </div>
       </div>
