@@ -11,7 +11,7 @@
         constructor(x, y,color) {
             this.x = x;
             this.y = y;
-            this.speed = 2;
+            this.speed = 20;
             this.velx = 2*(Math.random() - 0.5);
             this.vely = 2*(Math.random() - 0.5);
             this.color = color;
@@ -23,6 +23,9 @@
     let height = 100;
     let p = [];
     let tol = 200;
+    let moved = false;
+    let lastM = 0;
+    let count = 0;
 
     const sketch = (p5) => {
         p5.setup = () => {
@@ -39,8 +42,18 @@
         };
 
         p5.draw = () => {
+
+            count +=1;
+            if (p5.mouseX - lastM ){
+                moved = false;
+                count =0;
+            }
+            else if (count > 100){
+                moved = true;
+            }
+            lastM = p5.mouseX;
         
-            p5.background(0);
+            p5.background(100);
             p5.stroke(255,255,255);
             p5.ellipse(p5.mouseX, p5.mouseY, 5, 5);
 
@@ -74,15 +87,19 @@
                     if (e2 != e){
                         let d = Math.sqrt((e.x-e2.x)**2 + (e.y-e2.y)**2) ;
                         if (d < tol){
-                            p5.stroke(255,255,255,200-d);
+                            p5.stroke(255,255,255,Math.min(tol-d,255));
                             p5.line(e.x, e.y, e2.x, e2.y);
                         }
                     }
                 });
                 p5.stroke(e.color);
                 p5.fill(e.color);
-                p5.ellipse(e.x, e.y, width, height);
-                p5.ellipse(e.x, e.y, width-10, height-10);
+                if(moved){
+                    p5.ellipse(e.x, e.y, width, height);
+                }
+                
+                //p5.ellipse(e.x, e.y, width-10, height-10);
+            
             });
         };
   
