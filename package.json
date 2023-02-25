@@ -30,6 +30,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@emailjs/browser": "^3.10.0",
 		"daisyui": "^2.51.0",
 		"p5-svelte": "^3.1.2"
 	}

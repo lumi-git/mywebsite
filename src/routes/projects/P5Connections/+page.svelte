@@ -16,7 +16,7 @@
 
 <div> 
     <div class = " ml-32">
-        <a href = "/projects" class = "btn ">Back to projects</a>
+        <a href = "/projects" class = "btn bg-error"> Back to projects</a>
     </div>
 </div>
 
