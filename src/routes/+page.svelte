@@ -18,13 +18,15 @@ subject: document.getElementById("subject").value,
 </script>
 
 <Nav />
+<img src="tachesmulti.PNG" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+
 
 <h1 class = "text-center text-6xl text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-10">RONAN TREMOUREUX</h1>
 
 <h2 class = "text-center text-2xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10">Software - fullStack Developper</h2>
 
 <div class="flex w-full">
-    <div></div>
+
     <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
         <MapIcon size="24" />
         <a class = "text-4xl">Current Status</a>

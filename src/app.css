@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (max-width: 1026px) {
+    #fadeshow1 { display: none; }
+}
