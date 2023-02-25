@@ -24,7 +24,7 @@ subject: document.getElementById("subject").value,
 <h2 class = "text-center text-2xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10">Software - fullStack Developper</h2>
 
 <div class="flex w-full">
-    <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10">
+    <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
         <a class = "text-4xl">Status</a>
         <MapIcon size="24" />
         <a>student in software engineering school</a>
@@ -38,7 +38,7 @@ subject: document.getElementById("subject").value,
         
     </div>
     <div class="divider divider-horizontal"></div>
-    <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10">
+    <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
         <a class = "text-4xl">Current Research</a>
         <MapIcon size="24" />
         <a>Searching a internship abroad for 4 month</a>
@@ -52,9 +52,8 @@ subject: document.getElementById("subject").value,
         <div class="card-body items-center text-center">
           <h2 class="card-title text-7xl ">CV</h2>
           <p>A summurized version of this website ? here is my cv !</p>
-
         <div class="card-actions">
-            <a class="btn btn-primary" download href = "https://github.com/lumi-git/mywebsite/blob/main/static/CV.pdf" >Download</a>  
+            <a class="btn btn-primary" download href = "CV_English.pdf" >Download</a>  
         </div>
         </div>
       </div>
