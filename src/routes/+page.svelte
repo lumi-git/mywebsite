@@ -2,7 +2,7 @@
 import Nav from '../lib/Nav.svelte';
 import emailjs from '@emailjs/browser';
 
-import { AirplayIcon, AtSignIcon,MapIcon } from 'svelte-feather-icons'
+import { AirplayIcon, AtSignIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
 function sendEmail(e) {
 
     emailjs.send("service_oygafy5","template_7u0r2ki",{
@@ -24,23 +24,28 @@ subject: document.getElementById("subject").value,
 <h2 class = "text-center text-2xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10">Software - fullStack Developper</h2>
 
 <div class="flex w-full">
+    <div></div>
     <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
-        <a class = "text-4xl">Status</a>
         <MapIcon size="24" />
-        <a>student in software engineering school</a>
-        
-        <a>Rennes1 From France (flag)</a>
+        <a class = "text-4xl">Current Status</a>
+
+        <div class ="m-2"></div>
+
+        <a>Student in software engineering school at</a>
+        <a>ESIR located at Rennes1 University From France </a>
+        <a>4th year of shool</a>
 
 
-        <div class="divider"></div> 
-        <a>Find more about my education parcour in the <a class = "text-1xl " href = "/about">ABOUT</a> section</a>
-        
-        
     </div>
+    
     <div class="divider divider-horizontal"></div>
+
     <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
+        <SearchIcon size="24" />
         <a class = "text-4xl">Current Research</a>
-        <MapIcon size="24" />
+
+        <div class ="m-2"></div>
+
         <a>Searching a internship abroad for 4 month</a>
         <a>Software or web developpement</a>
     </div>

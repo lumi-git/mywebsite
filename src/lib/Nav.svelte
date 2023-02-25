@@ -1,26 +1,40 @@
+<script>
+
+import { AirplayIcon, AtSignIcon,BriefcaseIcon,HomeIcon,InfoIcon,MapIcon,PowerIcon,SearchIcon, ToolIcon } from 'svelte-feather-icons'
+
+</script>
 <div class="navbar bg-base-300">
 
   <div class="mx-1 ml-8 mr-28 flex">
     <a class="btn ease-in duration-300 bg-transparent" href="/">
-      <a>Home</a>
-    </a>
+      <HomeIcon />
+      <div class = "divider">Home</div>
+ 
+      </a>
+      
+
+    
   </div>
 
   <div class="mx-10 flex">
     <a class="btn ease-in duration-300  bg-transparent  " href="/projects">
-      <a>Projets</a>
+      <BriefcaseIcon />
+      <div class = "divider">Projets</div>
     </a>
   </div>
 
   <div class="mx-10 flex">
     <a class="btn  ease-in duration-300  bg-transparent" href="/skils">
-      <a>Skils</a>
+      <ToolIcon />
+      <div class = "divider">Skils</div>
+
     </a>
   </div>
 
   <div class="mx-10 flex">
     <a class="btn ease-in duration-300  bg-transparent" href="/about">
-      <a>About</a>
+      <InfoIcon />
+      <div class = "divider">About</div>
     </a>
   </div>
 
