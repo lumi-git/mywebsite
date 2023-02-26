@@ -12,7 +12,7 @@
 <h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">Contests</h2>
 <div class="flex w-full">
 
-    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://swerc.eu/2022/theme/scoreboard/public/" target="_blank" rel="noreferrer">
+    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://swerc.eu/2022/theme/scoreboard/public/" target="_blank" rel="noreferrer noopener">
 
     <div class = "card-title">SWERC 2023</div>
     <div class = "card-body">
@@ -29,7 +29,7 @@
 <div class="flex w-full">
 
 
-    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://breakthecode.soprasteria.fr" target="_blank" rel="noreferrer">
+    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://breakthecode.soprasteria.fr" target="_blank" rel="noreferrer noopener">
 
         <div class = "card-title">Break The Code 2022</div>
         <div class = "card-body">
@@ -41,7 +41,7 @@
 <div class="flex w-full">
 
 
-    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://le-shaker.com/coding-battle/" target="_blank" rel="noreferrer">
+    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://le-shaker.com/coding-battle/" target="_blank" rel="noreferrer noopener">
 
         <div class = "card-title">Codding Ballte </div>
         <div class = "card-title">2019 - 2022</div>
@@ -50,7 +50,7 @@
         </div>
     </a>
 
-    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "#" target="_blank" rel="noreferrer">
+    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "#" target="_blank" rel="noreferrer noopener">
 
         <div class = "card-title">Ballte Dev</div>
         <div class = "card-title">2019</div>

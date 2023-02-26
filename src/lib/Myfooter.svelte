@@ -9,6 +9,6 @@
 </div>
 <div class ="footer-center ">
 
-    <a href = "https://github.com/lumi-git">Find the code of this website on my github</a> 
+    <a href = "https://github.com/lumi-git" target = "_blank" rel="noreferrer noopener">Find the code of this website on my github</a> 
     <GithubIcon></GithubIcon>
 </div>

@@ -10,14 +10,14 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
   </div>
   
   <div class="ml-8 mt-2 mb-2 mr-28 flex">
-    <a class="btn ease-in duration-300 bg-transparent" href="/">
+    <a class="btn ease-in duration-300 bg-transparent" href="/" rel="noreferrer noopener" >
       <HomeIcon />
       <div class = "divider " id=fadeshow1>Home</div>
       </a>
   </div>
   
   <div class="mt-2 mb-2 flex">
-    <a class="btn ease-in duration-300  bg-transparent" href="/education">
+    <a class="btn ease-in duration-300  bg-transparent" href="/education" rel="noreferrer noopener">
       <BookIcon />
       <div class = "divider" id=fadeshow1>Education && Job</div>
     </a>
@@ -26,7 +26,7 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
   <div class = "m-2" id=fadeshow1></div>
 
   <div class="mt-2 mb-2 flex">
-    <a class="btn ease-in duration-300  bg-transparent  " href="/projects">
+    <a class="btn ease-in duration-300  bg-transparent  " href="/projects" rel="noreferrer noopener">
       <BriefcaseIcon />
       <div class = "divider" id=fadeshow1>Projects</div>
     </a>
@@ -35,7 +35,7 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
   <div class = "m-2" id=fadeshow1></div>
 
   <div class="mt-2 mb-2 flex">
-    <a class="btn  ease-in duration-300  bg-transparent" href="/skills">
+    <a class="btn  ease-in duration-300  bg-transparent" href="/skills" rel="noreferrer noopener">
       <ToolIcon />
       <div class = "divider" id=fadeshow1>Skills</div>
 
@@ -45,7 +45,7 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
   <div class = "m-2" id=fadeshow1></div>
 
   <div class="mt-2 mb-2 flex" >
-    <a class="btn ease-in duration-300  bg-transparent" href="/about">
+    <a class="btn ease-in duration-300  bg-transparent" href="/about" rel="noreferrer noopener">
       <InfoIcon />
       <div class = "divider" id=fadeshow1>About</div>
     </a>
@@ -57,7 +57,7 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
     
     <a href = "https://github.com/lumi-git" target = "_blank"><GithubIcon /></a>
       
-      <a class = "divider" id=fadeshow1 href = "https://github.com/lumi-git" target = "_blank">My Github </a>
+      <a class = "divider" id=fadeshow1 href = "https://github.com/lumi-git" target = "_blank" rel="noreferrer noopener">My Github </a>
 
 
   </div>
@@ -66,9 +66,9 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
 
   <div class="mt-2 mb-2 flex" >
     
-    <a href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank"><LinkedinIcon /></a>
+    <a href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank" rel="noreferrer noopener"><LinkedinIcon /></a>
       
-      <a class = "divider" id=fadeshow1 href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank">LinkedIn</a>
+      <a class = "divider" id=fadeshow1 href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank" rel="noreferrer noopener">LinkedIn</a>
 
 
   </div>

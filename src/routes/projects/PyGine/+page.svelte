@@ -27,14 +27,14 @@ import { GithubIcon } from 'svelte-feather-icons'
 </div>
 <div class = " flex justify-center">
 
-    <a href = "https://github.com/PythonGameEngineDev/PyGine"> 
+    <a href = "https://github.com/PythonGameEngineDev/PyGine" target = "_blank" rel="noreferrer noopener"> 
         
         <GithubIcon/>
     </a>
 
-    <a href = "https://github.com/PythonGameEngineDev/PyGine">Find more on the PyGine github</a>
+    <a href = "https://github.com/PythonGameEngineDev/PyGine" target = "_blank" rel="noreferrer noopener">Find more on the PyGine github</a>
 
-    <a href = "https://github.com/PythonGameEngineDev/PyGine"> 
+    <a href = "https://github.com/PythonGameEngineDev/PyGine" target = "_blank" rel="noreferrer noopener"> 
         
         <GithubIcon/>
     </a>
