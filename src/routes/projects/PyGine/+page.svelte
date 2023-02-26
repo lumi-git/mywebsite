@@ -1,13 +1,9 @@
 <script lang="ts">
-    import GameBox from '$lib/GameBox.svelte';
-    import Nav from '../../../lib/Nav.svelte';
+
     
 import { GithubIcon } from 'svelte-feather-icons'
-    import Myfooter from '../../../lib/Myfooter.svelte';
+
 </script>
-
-
-<Nav />
 
 
 
