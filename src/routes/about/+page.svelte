@@ -1,9 +1,9 @@
 <script lang="ts">
-    import Nav from '../../lib/Nav.svelte';
+
 </script>
 
 
-<Nav />
+
 
 <h2 class = "text-center text-7xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">What's new ?</h2>
 
@@ -50,7 +50,7 @@
         </div>
     </a>
 
-    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://breakthecode.soprasteria.fr" target="_blank" rel="noreferrer">
+    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "#" target="_blank" rel="noreferrer">
 
         <div class = "card-title">Ballte Dev</div>
         <div class = "card-title">2019</div>

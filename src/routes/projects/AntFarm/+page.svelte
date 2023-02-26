@@ -1,13 +1,6 @@
 <script lang="ts">
-    import GameBox from '$lib/GameBox.svelte';
-    import Nav from '../../../lib/Nav.svelte';
+
 </script>
-
-
-<Nav />
-
-
-
 
 <h2 class = "text-center text-2xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">An ant farm simulation in c++ with graphics</h2>
 
@@ -24,5 +17,4 @@
     <a>This page is not finished yet stay tuned !</a>
 
 </div>
-
 

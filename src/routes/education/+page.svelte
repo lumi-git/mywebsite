@@ -1,10 +1,9 @@
 <script lang="ts">
 
-    import { BookOpenIcon, BoxIcon, FlagIcon } from 'svelte-feather-icons';
-import Nav from '../../lib/Nav.svelte';
+
 </script>
 
-<Nav />
+
 <div class = "flex justify-center m-5  ">
 
     <h2 class = "text-7xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500  p-3 ">Education.</h2>
@@ -20,3 +19,4 @@ import Nav from '../../lib/Nav.svelte';
     </div>
 
 <div class ="divider"></div>
+

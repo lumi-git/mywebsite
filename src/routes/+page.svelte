@@ -1,8 +1,8 @@
 <script lang="ts">
-import Nav from '../lib/Nav.svelte';
+
 import emailjs from '@emailjs/browser';
 
-import { AirplayIcon, AtSignIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
+import { AirplayIcon, AtSignIcon,GithubIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
 function sendEmail(e) {
 
     emailjs.send("service_oygafy5","template_7u0r2ki",{
@@ -17,7 +17,7 @@ subject: document.getElementById("subject").value,
 
 </script>
 
-<Nav />
+
 <img src="tachesmulti.PNG" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
 
 
@@ -90,10 +90,6 @@ subject: document.getElementById("subject").value,
             <button type="submit" class=" btn py-3 px-5 text-sm font-medium text-center dark:text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send your message</button>
         </form>
     </div>
-    <div class ="footer-center ">
-        <a>Made by Ronan Tremoureux, Powered by svelte</a>
-
-    </div>
-    
   </section>
+
 

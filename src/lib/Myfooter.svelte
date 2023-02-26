@@ -1,0 +1,14 @@
+<script>
+
+	import { GithubIcon } from "svelte-feather-icons";
+
+</script>
+<div class ="footer-center ">
+    <a>Made by Ronan Tremoureux, Powered by svelte</a>
+
+</div>
+<div class ="footer-center ">
+
+    <a href = "https://github.com/lumi-git">Find the code of this website on my github</a> 
+    <GithubIcon></GithubIcon>
+</div>

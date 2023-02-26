@@ -1,9 +1,8 @@
 <script lang="ts">
-    import Nav from '../../lib/Nav.svelte';
+
 </script>
 
 
-<Nav />
 <h2 class = "text-center text-7xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-4 p-3">My differents Skills</h2>
 
 <div class = "divider m-10"></div>
@@ -44,7 +43,7 @@
     <div class = "card-body text-center text-xl  ">
         During my studies, we have been trained to work in a team. It helps me to developed my ability to work in a team and to communicate with others.
         I also used this ability during my internship at
-        <a href = "https://www.se.com/ww/en/">Shneider Electric.</a>
+        <a href = "https://www.se.com/ww/en/" target = "_blank">Shneider Electric.</a>
     </div>
 </div>
 
@@ -58,3 +57,4 @@
     </div>
 
 </div>
+

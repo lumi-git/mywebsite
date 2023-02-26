@@ -1,6 +1,6 @@
 <script>
 
-import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,HomeIcon,InfoIcon,MapIcon,PowerIcon,SearchIcon, ToolIcon } from 'svelte-feather-icons'
+import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,InfoIcon,LinkedinIcon,MapIcon,PowerIcon,SearchIcon, ToolIcon } from 'svelte-feather-icons'
 
 </script>
 <div class="navbar bg-base-300">
@@ -13,7 +13,6 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,HomeIcon,InfoIcon,MapIco
     <a class="btn ease-in duration-300 bg-transparent" href="/">
       <HomeIcon />
       <div class = "divider " id=fadeshow1>Home</div>
- 
       </a>
   </div>
   
@@ -51,6 +50,30 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,HomeIcon,InfoIcon,MapIco
       <div class = "divider" id=fadeshow1>About</div>
     </a>
   </div>
+
+  <div class = "ml-32" id=fadeshow1></div>
+
+  <div class="mt-2 mb-2 flex" >
+    
+    <a href = "https://github.com/lumi-git" target = "_blank"><GithubIcon /></a>
+      
+      <a class = "divider" id=fadeshow1 href = "https://github.com/lumi-git" target = "_blank">My Github </a>
+
+
+  </div>
+
+  <div class = "ml-2" id=fadeshow1></div>
+
+  <div class="mt-2 mb-2 flex" >
+    
+    <a href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank"><LinkedinIcon /></a>
+      
+      <a class = "divider" id=fadeshow1 href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank">LinkedIn</a>
+
+
+  </div>
+
+
 
 </div>
 

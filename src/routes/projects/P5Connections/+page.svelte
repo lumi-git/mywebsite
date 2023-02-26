@@ -1,12 +1,10 @@
 <script lang="ts">
 	import DotConnection from '$lib/DotConnection.svelte';
-	import Evolution from '$lib/DotConnection.svelte';
 
-    import Nav from '../../../lib/Nav.svelte';
 </script>
 
 
-<Nav />
+
 
 
 
@@ -24,4 +22,3 @@
 <div class = " flex justify-center">
     <DotConnection />
 </div>
-

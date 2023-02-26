@@ -3,6 +3,7 @@
     import Nav from '../../../lib/Nav.svelte';
     
 import { GithubIcon } from 'svelte-feather-icons'
+    import Myfooter from '../../../lib/Myfooter.svelte';
 </script>
 
 

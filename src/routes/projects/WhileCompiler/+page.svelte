@@ -1,6 +1,7 @@
 <script lang="ts">
     import GameBox from '$lib/GameBox.svelte';
     import Nav from '../../../lib/Nav.svelte';
+    import Myfooter from '../../../lib/Myfooter.svelte';
 </script>
 
 

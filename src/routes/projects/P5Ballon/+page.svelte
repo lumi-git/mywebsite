@@ -1,10 +1,8 @@
 <script lang="ts">
     import GameBox from '$lib/GameBox.svelte';
-    import Nav from '../../../lib/Nav.svelte';
+
 </script>
 
-
-<Nav />
 
 
 
@@ -28,4 +26,3 @@
 <div class = " flex justify-center">
     <GameBox />
 </div>
-
