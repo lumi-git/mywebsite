@@ -1,8 +1,3 @@
-<script>
-
-	import { GithubIcon } from "svelte-feather-icons";
-
-</script>
 <div class ="footer-center ">
     <a>Made by Ronan Tremoureux, Powered by svelte</a>
 
