@@ -9,14 +9,14 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
 
   </div>
   
-  <div class="ml-8 mt-2 mb-2 mr-28 flex">
+  <div class="mr-auto mt-2 mb-2  flex">
     <a class="btn ease-in duration-300 bg-transparent" href="/" rel="noreferrer noopener" >
       <HomeIcon />
       <div class = "divider " id=fadeshow1>Home</div>
       </a>
   </div>
   
-  <div class="mt-2 mb-2 flex">
+  <div class="mt-2 mb-2 flex ml-2">
     <a class="btn ease-in duration-300  bg-transparent" href="/education" rel="noreferrer noopener">
       <BookIcon />
       <div class = "divider" id=fadeshow1>Education && Job</div>
@@ -25,7 +25,7 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
 
   <div class = "m-2" id=fadeshow1></div>
 
-  <div class="mt-2 mb-2 flex">
+  <div class="mt-2 mb-2 flex ml-2">
     <a class="btn ease-in duration-300  bg-transparent  " href="/projects" rel="noreferrer noopener">
       <BriefcaseIcon />
       <div class = "divider" id=fadeshow1>Projects</div>
@@ -34,7 +34,7 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
 
   <div class = "m-2" id=fadeshow1></div>
 
-  <div class="mt-2 mb-2 flex">
+  <div class="mt-2 mb-2 flex ml-2">
     <a class="btn  ease-in duration-300  bg-transparent" href="/skills" rel="noreferrer noopener">
       <ToolIcon />
       <div class = "divider" id=fadeshow1>Skills</div>
@@ -44,27 +44,26 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
 
   <div class = "m-2" id=fadeshow1></div>
 
-  <div class="mt-2 mb-2 flex" >
+  <div class="mt-2 mb-2 flex ml-2" >
     <a class="btn ease-in duration-300  bg-transparent" href="/about" rel="noreferrer noopener">
       <InfoIcon />
       <div class = "divider" id=fadeshow1>About</div>
     </a>
   </div>
 
-  <div class = "ml-32" id=fadeshow1></div>
+  <div class = "ml-4" id=fadeshow1></div>
 
-  <div class="mt-2 mb-2 flex" >
+  <div class="mt-2 mb-2 flex ml-2"  >
     
     <a href = "https://github.com/lumi-git" target = "_blank"><GithubIcon /></a>
       
       <a class = "divider" id=fadeshow1 href = "https://github.com/lumi-git" target = "_blank" rel="noreferrer noopener">My Github </a>
 
-
   </div>
 
   <div class = "ml-2" id=fadeshow1></div>
 
-  <div class="mt-2 mb-2 flex" >
+  <div class="mt-2 mb-2 ml-2 flex" >
     
     <a href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank" rel="noreferrer noopener"><LinkedinIcon /></a>
       

@@ -43,7 +43,7 @@
 
     <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://le-shaker.com/coding-battle/" target="_blank" rel="noreferrer noopener">
 
-        <div class = "card-title">Codding Ballte </div>
+        <div class = "card-title">Coding Ballte </div>
         <div class = "card-title">2019 - 2022</div>
         <div class = "card-body">
             Online coding competition
@@ -63,4 +63,4 @@
 
 <div class = "divider m-10"></div>
 
-<h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-32 p-5">In Comming..</h2>
+<h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-32 p-5">In Coming..</h2>

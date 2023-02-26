@@ -5,3 +5,12 @@
 @media (max-width: 1026px) {
     #fadeshow1 { display: none; }
 }
+
+.hidden {
+    opacity: 0;
+    transition:all 1s;
+}
+
+.show {
+    opacity: 1;
+}
