@@ -47,13 +47,11 @@
 <div class = "divider m-10"></div>
 
 
-<h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">SoftSkils</h2>
+<h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">SoftSkills</h2>
 
 
 <div class="flex w-full">
-
     <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
-
     <div class = "card-title">Team Working</div>
     <div class = "card-body text-center text-xl  ">
         During my studies, we have been trained to work in a team. It helps me to developed my ability to work in a team and to communicate with others.

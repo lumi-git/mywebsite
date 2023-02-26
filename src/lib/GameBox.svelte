@@ -1,6 +1,6 @@
 
 
-<script lang=ts >
+<script lang="ts" >
     import P5 from 'p5-svelte';
     
     function addPoint(x,y) {
