@@ -6,11 +6,26 @@
     #fadeshow1 { display: none; }
 }
 
-.hidden {
-    opacity: 0;
-    transition:all 1s;
+
+.tc1{
+    color : #343F4A 
 }
 
-.show {
-    opacity: 1;
+.c1{
+    background-color : #44D77A;
+}
+
+
+.c2{
+    background-color : #FFD77A;
+}
+
+.c3{
+    background-color : #FEBFB4;
+}
+.c4{
+    background-color : #DBBFE8;
+}
+.c5{
+    background-color : #B5DAFE;
 }

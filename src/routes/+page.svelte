@@ -1,7 +1,5 @@
 <script lang="ts">
-  
       import { AirplayIcon, AtSignIcon,GithubIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
-  
       //script for emailjs
       import emailjs from '@emailjs/browser';
       function sendEmail(e) {
@@ -14,8 +12,7 @@
           console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
       });
       }
-  
-  
+      
   </script>
   
 
