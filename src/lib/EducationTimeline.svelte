@@ -15,7 +15,9 @@ import TimelineItem from "./TimelineItem.svelte";
                 <!-- left col -->
 
                 <TimelineItem card_title="4th year of ESIR Developper engineering shool" card_desc = "At Rennes University"  
-                card_content = ""
+                card_content = " During my year of engineering school, I learned how to developp a software from scratch, using the right tools.
+                I also learned the goods and bads ways of doing things by leaning for example devOps methodes. 
+                "
                 />
                 
                 <!--line column-->
@@ -29,7 +31,7 @@ import TimelineItem from "./TimelineItem.svelte";
             <div class="flex flex-row w-full">
                 <!-- left col -->
                 <TimelineItem card_title="DUT in Electrical engineering" card_desc = "At Rennes University"
-                card_content = "Learning signal oriented maths and physics. Industrial Automatisme and embedded programming, in C and Python
+                card_content = "Learning signal oriented maths and physics. Industrial Automatisme and embedded programming, in C and Python.
 
                 "
                 />
