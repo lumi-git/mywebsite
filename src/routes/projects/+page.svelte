@@ -9,7 +9,7 @@
 
     <div> 
 
-        <div class = "items-center  card c1 bg-opacity-60   rounded  w-1/2 m-auto p-5 ">
+        <div class = "items-center  card c1 bg-opacity-60   rounded  w-1/2 m-auto p-5 min-w-fit">
           
             <img src = "pytonLogo.png" class = " flex  w-10 " />
             <h1 class = "tc1 text-7xl  m-6" >Python game lib</h1>
@@ -23,7 +23,7 @@
     <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
     <div> 
-        <div class = "items-center  card c2   bg-opacity-60   rounded  w-1/2 m-auto p-5">
+        <div class = "items-center  card c2   bg-opacity-60   rounded  w-1/2 m-auto p-5 min-w-fit">
             <img src = "javaLogo.png" class = " flex justify-center w-20" />
             
             <h1 class = "tc1 text-7xl bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 m-6" >Language Compiler</h1>
@@ -36,7 +36,7 @@
     <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
     <div> 
-        <div class = "items-center  card c3   bg-opacity-60   rounded  w-1/2 m-auto p-5">
+        <div class = "items-center  card c3   bg-opacity-60   rounded  w-1/2 m-auto p-5 min-w-fit">
             <img src = "c++Logo.png" class = " flex justify-center w-10 " />
             
             <h1 class = "tc1 text-7xl bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 m-6" >Ant Farm</h1>
@@ -48,7 +48,7 @@
     <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
     <div> 
-        <div class = " items-center card c4 bg-opacity-60   rounded  w-1/2 m-auto p-5">
+        <div class = " items-center card c4 bg-opacity-60   rounded  w-1/2 m-auto p-5 min-w-fit">
             <img src = "javascriptLogo.png" class = " flex justify-center w-10  " />
             <h1 class = "tc1 text-7xl bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 m-6">Dot Connection</h1>
             <div>
@@ -61,7 +61,7 @@
     <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
     <div> 
-        <div class = "items-center  card c5 bg-opacity-60   rounded  w-1/2  m-auto p-5">
+        <div class = "items-center  card c5 bg-opacity-60   rounded  w-1/2  m-auto p-5 min-w-fit">
             <img src = "javascriptLogo.png" class = " flex justify-center w-10 " />
             <h1 class = "tc1 text-7xl bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 m-6" >Ballons</h1>
             <a class = "tc1">A simple demo - Ballon simulation lead by p5 library in JS</a>

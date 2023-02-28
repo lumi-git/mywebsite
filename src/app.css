@@ -6,6 +6,13 @@
     #fadeshow1 { display: none; }
 }
 
+@media (max-width: 1026px) {
+    #fadeshow2 { display: block; }
+}
+
+body,html{
+    size: 100%;
+}
 
 .tc1{
     color : #343F4A 

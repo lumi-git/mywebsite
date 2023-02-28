@@ -16,7 +16,8 @@ import TimelineItem from "./TimelineItem.svelte";
 
                 <TimelineItem card_title="4th year of ESIR Developper engineering shool" card_desc = "At Rennes University"  
                 card_content = " During my year of engineering school, I learned how to developp a software from scratch, using the right tools.
-                I also learned the goods and bads ways of doing things by leaning for example devOps methodes. 
+                I also learned the goods and bads ways of doing things by leaning for example devOps methodes.
+                I also learned how to work in a team and how to manage a project, that are notions as important as knowing how to develop.
                 "
                 />
                 
@@ -31,8 +32,9 @@ import TimelineItem from "./TimelineItem.svelte";
             <div class="flex flex-row w-full">
                 <!-- left col -->
                 <TimelineItem card_title="DUT in Electrical engineering" card_desc = "At Rennes University"
-                card_content = "Learning signal oriented maths and physics. Industrial Automatisme and embedded programming, in C and Python.
-
+                card_content = "Learning signal oriented maths and physics,
+                 Industrial Automatisme and embedded programming, in C and Python.
+                 This is during this formation, that I learned a lot of things myself about programming.
                 "
                 />
                 <!--line column-->
@@ -40,17 +42,19 @@ import TimelineItem from "./TimelineItem.svelte";
                 <!--right column-->
                 <TimelineItem card_title="Internship at Schenider Electric SETBT " card_desc = "At Chartres De Bretagnes"
                 card_content = "Developping a Simulation software for connected power circuit breaker.
-                it was able to simulate the current, the voltage and all the differents powers it measured 
+                it was able to simulate the current, the voltage and all the differents powers it measured. It was connected with a PLC and a HMI.
                 "
                 />
             </div>
 
-            
+
 
             <div class="flex flex-row w-full">
                 <!-- left col -->
                 <TimelineItem card_title="Bacalaureate STI2D SI EE" card_desc = "At Brequiny High School"
-                card_content = ""
+                card_content = "This formation helped me to learn the basics of programming
+                as whell as other notion about heat, lighting, and a lot of other subjects.
+                "
                 />
 
                 

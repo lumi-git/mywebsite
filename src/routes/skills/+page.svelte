@@ -62,7 +62,7 @@
 
 <h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">Certifications</h2>
 
-<div class="flex w-full">
+<div class="flex w-full min-w-fit">
 
     <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" >
 
@@ -87,7 +87,7 @@
 </div>
 
 
-    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
+    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2 min-w-fit">
 
         <div class = "card-title">Electrical Habilitation</div>
         <div class = "card-body text-xl">
