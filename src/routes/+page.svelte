@@ -12,13 +12,8 @@
           console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
       });
       }
-      
   </script>
   
-
-
-
-
 <img src="tachesmulti.PNG" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
 
 

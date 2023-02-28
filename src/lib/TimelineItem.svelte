@@ -1,7 +1,7 @@
 <script lang = "ts">
     // component props
     // Camel case not supported for props, see drawback section.
-    export let card_title, card_desc, card_img;
+    export let card_title, card_desc, card_img,card_content;
 </script>
 
 
@@ -17,6 +17,10 @@
         <div class="text-gray-600">
             {card_desc}
         </div>
+    <div class = "text-gray-600 pt-3">
+        {card_content}
+    </div>
+
     </div>
 
 </div>

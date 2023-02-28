@@ -19,7 +19,7 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
   <div class="mt-2 mb-2 flex ml-2">
     <a class="btn ease-in duration-300  bg-transparent" href="/education" rel="noreferrer noopener">
       <BookIcon />
-      <div class = "divider" id=fadeshow1>Education && Job</div>
+      <div class = "divider" id=fadeshow1>Education & Job</div>
     </a>
   </div>
 

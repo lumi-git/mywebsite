@@ -16,7 +16,7 @@
 
     <div class = "card-title">SWERC 2023</div>
     <div class = "card-body">
-        I paticipate with my team at the ICPC Swerc 2023 At milano, Italy
+        I paticipate with my team "PBI" at the ICPC Swerc 2023 At milano, Italy
     </div>
 
 
@@ -43,7 +43,7 @@
 
     <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://le-shaker.com/coding-battle/" target="_blank" rel="noreferrer noopener">
 
-        <div class = "card-title">Coding Ballte </div>
+        <div class = "card-title">Coding Battle </div>
         <div class = "card-title">2019 - 2022</div>
         <div class = "card-body">
             Online coding competition
@@ -52,7 +52,7 @@
 
     <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "#" target="_blank" rel="noreferrer noopener">
 
-        <div class = "card-title">Ballte Dev</div>
+        <div class = "card-title">Battle Dev</div>
         <div class = "card-title">2019</div>
         <div class = "card-body">
             Online coding competition
