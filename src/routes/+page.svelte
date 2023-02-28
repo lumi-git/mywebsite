@@ -1,18 +1,31 @@
 <script lang="ts">
       import { AirplayIcon, AtSignIcon,GithubIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
+
+
       //script for emailjs
       import emailjs from '@emailjs/browser';
       function sendEmail(e) {
       emailjs.send("service_oygafy5","template_7u0r2ki",{
       from_name: document.getElementById("email").value,
-      to_name: "Ronan",
+      to_name: "WebsitePerso",
       message: document.getElementById("message").value,
       subject: document.getElementById("subject").value,
       },"deo-7Gb6aCtI4A3aj").then(function(response) {
           console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
       });
       }
-  </script>
+      import { onMount } from 'svelte';
+	import AOS from 'aos';
+
+
+    onMount(() => {
+		AOS.init()
+	})
+</script>
+
+<svelte:head>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</svelte:head>
   
 <img src="tachesmulti.PNG" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
 
@@ -24,7 +37,7 @@
 
 <div class="flex w-full">
 
-    <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
+    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
         <MapIcon size="24" />
         <p class = "text-4xl">Current Status</p>
 
@@ -39,7 +52,7 @@
     
     <div class="divider divider-horizontal"></div>
 
-    <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
+    <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" >
         <SearchIcon size="24" />
         <p class = "text-4xl">Current Research</p>
 
@@ -50,24 +63,30 @@
     </div>
   </div>
 
-<div class = "content-center  items-center flex m-10">
+<div class = "content-center  items-center flex m-10" data-aos="zoom-in">
     <div class="card w-1/2 bg-indigo-300 bg-opacity-40 shadow-xl m-auto min-w-fit  ">
 
         <div class="card-body items-center text-center">
           <h2 class="card-title text-7xl ">RESUME</h2>
           <p>A summurized version of this website ? here is my resume !</p>
-        <div class="card-actions">
-            <a class="btn btn-primary" download href = "CV.pdf" target = "_blank" rel="noreferrer noopener">Download</a>  
-        </div>
+
+          <div class = "">
+            <div class="card-actions float-right p-2">
+                <a class="btn btn-primary bg-indigo-500 border-indigo-500 " download href = "CV.pdf" target = "_blank" rel="noreferrer noopener">Download</a>  
+            </div>
+                <div class="card-actions float-left p-2">
+                    <a class="btn btn-primary" href = "/resumepreview" rel="noreferrer noopener">Preview</a>  
+                </div>
+            </div>
         </div>
       </div>
 </div>
 
 
 
-<div class="divider"></div> 
+<div class="divider "></div> 
 
-<div>
+<div data-aos="fade-up" >
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">        
             <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me at Contact@ronantremoureux.fr</h2>
@@ -92,4 +111,3 @@
 
 
 </div>
-

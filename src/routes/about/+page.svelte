@@ -1,13 +1,26 @@
 <script lang="ts">
 
+
+import { onMount } from 'svelte';
+	import AOS from 'aos';
+
+
+    onMount(() => {
+		AOS.init()
+	})
 </script>
 
+<svelte:head>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</svelte:head>
 
 
 
-<h2 class = "text-center text-7xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">What's new ?</h2>
 
-<div class = "divider m-10"></div>
+<h1 class = "text-center text-7xl pt-10 pb-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-4 ">What's new ?</h1>
+
+<div class="divider w-20 m-auto mt-20 mb-20"></div> 
+
 
 <h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">Contests</h2>
 <div class="flex w-full">
@@ -24,8 +37,6 @@
 
 </div>
 
-
-
 <div class="flex w-full">
 
 
@@ -38,10 +49,10 @@
     </a>
 </div>
 
-<div class="flex w-full">
+<div class="flex w-full" >
 
 
-    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://le-shaker.com/coding-battle/" target="_blank" rel="noreferrer noopener">
+    <a data-aos-offset= "200" data-aos="zoom-in-down" class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://le-shaker.com/coding-battle/" target="_blank" rel="noreferrer noopener">
 
         <div class = "card-title">Coding Battle </div>
         <div class = "card-title">2019 - 2022</div>
@@ -50,7 +61,7 @@
         </div>
     </a>
 
-    <a class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "#" target="_blank" rel="noreferrer noopener">
+    <a data-aos-offset= "280" data-aos="zoom-in-down" class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "#" target="_blank" rel="noreferrer noopener">
 
         <div class = "card-title">Battle Dev</div>
         <div class = "card-title">2019</div>
@@ -63,4 +74,4 @@
 
 <div class = "divider m-10"></div>
 
-<h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-32 p-5">In Coming..</h2>
+<h2 data-aos="slide-left" class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-32 p-5">In Coming..</h2>

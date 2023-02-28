@@ -2,7 +2,18 @@
 	import DividerTimeline from "./DividerTimeline.svelte";
 import TimelineItem from "./TimelineItem.svelte";
 
+import { onMount } from 'svelte';
+	import AOS from 'aos';
+
+
+    onMount(() => {
+		AOS.init()
+	})
 </script>
+
+<svelte:head>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</svelte:head>
 <!-- component -->
 <!-- This is an example component -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -11,14 +22,15 @@ import TimelineItem from "./TimelineItem.svelte";
         <div class="w-2/3 mx-auto">
             <div class="flex flex-row w-full" />
 
-            <div class="flex flex-row w-full">
+            <div class="flex flex-row w-full" >
                 <!-- left col -->
 
-                <TimelineItem card_title="4th year of ESIR Developper engineering shool" card_desc = "At Rennes University"  
+                <TimelineItem  card_title="Second year of ESIR Developper engineering shool" card_desc = "At Rennes University"  
                 card_content = " During my year of engineering school, I learned how to developp a software from scratch, using the right tools.
                 I also learned the goods and bads ways of doing things by leaning for example devOps methodes.
                 I also learned how to work in a team and how to manage a project, that are notions as important as knowing how to develop.
                 "
+
                 />
                 
                 <!--line column-->
@@ -29,7 +41,7 @@ import TimelineItem from "./TimelineItem.svelte";
             </div>
 
 
-            <div class="flex flex-row w-full">
+            <div class="flex flex-row w-full" >
                 <!-- left col -->
                 <TimelineItem card_title="DUT in Electrical engineering" card_desc = "At Rennes University"
                 card_content = "Learning signal oriented maths and physics,
@@ -49,19 +61,23 @@ import TimelineItem from "./TimelineItem.svelte";
 
 
 
-            <div class="flex flex-row w-full">
+            <div class="flex flex-row w-full" >
                 <!-- left col -->
                 <TimelineItem card_title="Bacalaureate STI2D SI EE" card_desc = "At Brequiny High School"
                 card_content = "This formation helped me to learn the basics of programming
                 as whell as other notion about heat, lighting, and a lot of other subjects.
                 "
                 />
-
                 
                 <!--line column-->
                 <DividerTimeline content = "2019"/>
                 <!--right column-->
-                <div class="w-2/5 px-2 py-10"></div>
+                <TimelineItem card_title="Summer Job 2019 - 2023 " card_desc = "At GEFA Laboratory"
+                card_content = "During this summer job, i leared how to work with a team and with other peoples.
+                I also learned how to manage my time during tasks.
+                "
+                />
+                
                 
             </div>
 
@@ -70,4 +86,7 @@ import TimelineItem from "./TimelineItem.svelte";
         </div>
     </div>
 
+</div>
+
+<div class="w-2/5 px-2 py-32">
 </div>

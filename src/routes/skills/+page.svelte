@@ -1,15 +1,23 @@
 <script lang="ts">
-
+      import { onMount } from 'svelte';
+	import AOS from 'aos';
+onMount(() => {
+		AOS.init()
+	})
 </script>
 
+<svelte:head>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</svelte:head>
 
-<h2 class = "text-center text-7xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-4 p-3">My differents Skills</h2>
 
-<div class = "divider m-10"></div>
+<h1 class = "text-center text-7xl pt-10 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-4 ">My differents Skills</h1>
+
+<div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
 <div class="flex w-full">
 
-    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
+    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2"data-aos="fade-up">
         <div class = "card-title">Team Working</div>
         <div class = "card-body text-center text-xl  ">
             During my studies, we have been trained to work in a team. It helps me to developed my ability to work in a team and to communicate with others.
@@ -18,7 +26,7 @@
         </div>
     </div>
 
-    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" >
+    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" data-aos="fade-up">
         <div class = "card-title">Organized</div>
         <div class = "card-body text-center text-xl  ">
             A key word for me is organization. The deference between a good and a bad project is the organization.
@@ -29,7 +37,7 @@
 
 <div class="flex w-full">
 
-    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
+    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" data-aos="fade-up">
         <div class = "card-title">Curious</div>
         <div class = "card-body text-center text-xl  ">
             As I am a developper I need to be aware of the new technologies on the market. I am always need to learn new things and to improve my skills. 
@@ -37,7 +45,7 @@
         </div>
     </div>
 
-    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" >
+    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" data-aos="fade-up">
         <div class = "card-title">Problem-Solving</div>
         <div class = "card-body text-center text-xl  ">
             What i like in Probleme solving is is the step by step approach.
@@ -48,7 +56,7 @@
 
 </div>
 
-<div class="flex w-full pb-32">
+<div class="flex w-full pb-32" data-aos="fade-up">
 
     <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2 ">
         <div class = "card-title">Autodidact</div>
@@ -62,7 +70,7 @@
 
 <h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">Certifications</h2>
 
-<div class="flex w-full min-w-fit">
+<div class="flex w-full min-w-fit" data-aos="fade-up-right">
 
     <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" >
 
@@ -87,7 +95,7 @@
 </div>
 
 
-    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2 min-w-fit">
+    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2 min-w-fit" data-aos="fade-up-left">
 
         <div class = "card-title">Electrical Habilitation</div>
         <div class = "card-body text-xl">
