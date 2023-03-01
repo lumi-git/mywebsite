@@ -44,8 +44,3 @@ You can preview the production build with `npm run preview`.
 > https://tailwindcss.com
 
 > https://daisyui.com
-
-
-## websites used
-
-> https://dribbble.com
