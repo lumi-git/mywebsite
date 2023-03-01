@@ -1,5 +1,5 @@
 <script lang="ts">
-      import { AirplayIcon, AtSignIcon,GithubIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
+      import { AirplayIcon, AtSignIcon,CalendarIcon,ClockIcon,DatabaseIcon,GithubIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
 
 
       //script for emailjs
@@ -30,38 +30,75 @@
 <img src="tachesmulti.PNG" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
 
 
-
 <h1 class = "text-center text-6xl text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-10">RONAN TREMOUREUX</h1>
 
 <h2 class = "text-center text-2xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10">Software - fullStack Developper</h2>
 
-<div class="flex w-full">
+<div class="flex w-full justify-center">
+    <div class = "pr-10">
+        <div class="mockup-window bg-base-200 border border-indigo-400 border-opacity-50 border-dashed ">
+            <div class = " grid place-items-center ">
+                <MapIcon size="38"/>
 
-    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2">
-        <MapIcon size="24" />
-        <p class = "text-4xl">Current Status</p>
+                <p class = "text-4xl">Current Status</p>
+                </div>
+            <div class="flex justify-center  bg-base-200 pl-10 pr-10">
 
-        <div class ="m-2"></div>
+                <div class="grid flex-grow rounded-box place-items-center  m-5 w-1/2">
 
-        <p>Student in software engineering school at</p>
-        <p>ESIR located at Rennes1 University From France </p>
-        <p>4th year of shool</p>
+        
+                <div class ="m-1"></div>
+        
+                <p>Second year in software engineering school at ESIR</p>
 
+                <p>Located at Rennes1 University From France </p>
+                <div class ="m-1"></div>
+                    
+                <ClockIcon size="20"/>
+        
+                <p> Graduated in 2024</p>
 
+                </div>
+
+            </div>
+        </div>
     </div>
-    
+
     <div class="divider divider-horizontal"></div>
 
-    <div class="grid  flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" >
-        <SearchIcon size="24" />
-        <p class = "text-4xl">Current Research</p>
+    <div class = "pl-10">
+        <div class="mockup-window border bg-base-200 border-indigo-400 border-opacity-50 border-dashed ">
+            <div class = " grid place-items-center  ">
+                <SearchIcon size="38"/>
 
-        <div class ="m-2"></div>
+                <p class = "text-4xl">Current Research</p>
+                </div>
+            <div class="flex justify-center  bg-base-200 pl-10 pr-10">
 
-        <p>Searching a internship abroad for 4 month</p>
-        <p>Software or web developpement</p>
+
+                <div class="flex-grow card rounded-box place-items-center m-5 w-1/2 " >
+                    
+
+        
+            
+                    <div class ="m-1"></div>
+            
+                    <p>Searching a internship abroad (out of France) for 4 month</p>
+                    <p>in software or web developpement.</p>
+                    <div class ="m-1"></div>
+                    
+                    <CalendarIcon size="20"/>
+            
+                    <p> From early June to end of september 2023</p>
+                </div>
+
+            </div>
+        </div>
     </div>
-  </div>
+
+
+
+</div>
 
 <div class = "content-center  items-center flex m-10" data-aos="zoom-in">
     <div class="card w-1/2 bg-indigo-300 bg-opacity-40 shadow-xl m-auto min-w-fit  ">
