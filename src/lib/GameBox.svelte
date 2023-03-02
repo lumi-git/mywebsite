@@ -35,8 +35,6 @@
         p5.setup = () => {
             p5.createCanvas(p5.windowWidth-100,p5.windowHeight-200);
             
-
-            
             let button = p5.createButton('Click Here to add more ballons ! ',["btaddballons"]);
             button.style('background-color', 'rgba(0,0,0,0)');
             button.mousePressed(changeBG);

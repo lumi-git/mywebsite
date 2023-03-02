@@ -29,7 +29,7 @@ import { onMount } from 'svelte';
 
     <div class = "card-title">SWERC 2023</div>
     <div class = "card-body">
-        I paticipate with my team "PBI" at the ICPC Swerc 2023 At milano, Italy
+        I paticipate with my team "PBI" at the ICPC Swerc 2023 at Milano, Italy
     </div>
 
 

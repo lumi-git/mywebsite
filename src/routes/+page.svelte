@@ -45,12 +45,8 @@
             <div class="flex justify-center  bg-base-200 pl-10 pr-10">
 
                 <div class="grid flex-grow rounded-box place-items-center  m-5 w-1/2">
-
-        
                 <div class ="m-1"></div>
-        
                 <p>Second year in software engineering school at ESIR</p>
-
                 <p>Located at Rennes1 University From France </p>
                 <div class ="m-1"></div>
                     
@@ -78,33 +74,24 @@
 
                 <div class="flex-grow card rounded-box place-items-center m-5 w-1/2 " >
                     
-
-        
-            
                     <div class ="m-1"></div>
             
                     <p>Searching a internship abroad (out of France) for 4 month</p>
                     <p>in software or web developpement.</p>
                     <div class ="m-1"></div>
-                    
                     <CalendarIcon size="20"/>
-            
                     <p> From early June to end of september 2023</p>
                 </div>
-
             </div>
         </div>
     </div>
-
-
-
 </div>
 
-<div class = "content-center  items-center flex m-10" data-aos="zoom-in">
+<div class = "content-center  items-center flex m-10 " data-aos="zoom-in" >
     <div class="card w-1/2 bg-indigo-300 bg-opacity-40 shadow-xl m-auto min-w-fit  ">
 
         <div class="card-body items-center text-center">
-          <h2 class="card-title text-7xl ">RESUME</h2>
+          <h2 class="card-title text-7xl">RESUME</h2>
           <p>A summurized version of this website ? here is my resume !</p>
 
           <div class = "">
@@ -145,6 +132,4 @@
             </form>
         </div>
     </section>
-
-
 </div>

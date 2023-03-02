@@ -1,14 +1,11 @@
 <script>
 
-import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,InfoIcon,LinkedinIcon,MapIcon,PowerIcon,SearchIcon, ToolIcon } from 'svelte-feather-icons'
-
+  import {BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,InfoIcon,LinkedinIcon, ToolIcon } from 'svelte-feather-icons'
 </script>
+
+
+<!-- button to home page -->
 <div class="navbar bg-base-300">
-
-  <div class="">
-
-  </div>
-  
   <div class="mr-auto mt-2 mb-2  flex">
     <a class="btn ease-in duration-300 bg-transparent" href="/" rel="noreferrer noopener" >
       <HomeIcon />
@@ -16,6 +13,8 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
       </a>
   </div>
   
+
+<!-- button to Education -->
   <div class="mt-2 mb-2 flex ml-2">
     <a class="btn ease-in duration-300  bg-transparent" href="/education" rel="noreferrer noopener">
       <BookIcon />
@@ -23,8 +22,13 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
     </a>
   </div>
 
+
+
+<!-- divistion for margin if the screen is wider -->
   <div class = "m-2" id=fadeshow1></div>
 
+
+<!-- button to Project -->
   <div class="mt-2 mb-2 flex ml-2">
     <a class="btn ease-in duration-300  bg-transparent  " href="/projects" rel="noreferrer noopener">
       <BriefcaseIcon />
@@ -34,6 +38,8 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
 
   <div class = "m-2" id=fadeshow1></div>
 
+
+<!-- button to Skills -->
   <div class="mt-2 mb-2 flex ml-2">
     <a class="btn  ease-in duration-300  bg-transparent" href="/skills" rel="noreferrer noopener">
       <ToolIcon />
@@ -44,6 +50,8 @@ import { AirplayIcon, AtSignIcon,BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,Info
 
   <div class = "m-2" id=fadeshow1></div>
 
+
+<!-- button to About -->
   <div class="mt-2 mb-2 flex ml-2" >
     <a class="btn ease-in duration-300  bg-transparent" href="/about" rel="noreferrer noopener">
       <InfoIcon />
