@@ -6,13 +6,14 @@
 
 <!-- button to home page -->
 <div class="navbar bg-base-300">
-  <div class="mr-auto mt-2 mb-2  flex">
-    <a class="btn ease-in duration-300 bg-transparent" href="/" rel="noreferrer noopener" >
-      <HomeIcon />
-      <div class = "divider " id=fadeshow1>Home</div>
-      </a>
-  </div>
+
+  <a href="/" rel="noreferrer noopener" class = "Logo  ml-10 flex flex-wrap mr-auto" >
   
+  <img src = "R.png " class = "" alt = "R">
+
+  <img/>
+
+</a>
 
 <!-- button to Education -->
   <div class="mt-2 mb-2 flex ml-2">
