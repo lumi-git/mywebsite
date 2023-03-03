@@ -1,6 +1,7 @@
 <script lang="ts">
     import { onMount } from 'svelte';
 	import AOS from 'aos';
+	import { Link2Icon, LinkIcon } from 'svelte-feather-icons';
 
 
     onMount(() => {
@@ -14,7 +15,16 @@
 
 <h1 class = "text-center text-7xl pt-10 pb-4 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-4 ">Projects sample</h1>
 
+
+
+
+
 <div id = itemsHolder >
+
+
+
+
+
 
     <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
@@ -59,6 +69,20 @@
     <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
     <div data-aos="slide-right"> 
+
+        <div class = "items-center Link card bg-opacity-60 rounded-2xl w-1/2 m-auto p-5 min-w-fit border">
+            <LinkIcon  class = " flex justify-center w-12 h-12" />
+            <h1 class = "tc1 text-7xl  m-6" >Others Websites</h1>
+            <a class = "tc1 "> Redirection to others websites/API </a>
+            <a href = "/projects/OthersWebsites" class = "btn  m-6">About it </a>
+        
+        </div>
+    </div>
+
+
+    <div class="divider w-20 m-auto mt-20 mb-20"></div> 
+
+    <div data-aos="slide-left"> 
         <div class = " items-center card c4 bg-opacity-60   rounded-2xl  w-1/2 m-auto p-5 min-w-fit">
             <img src = "javascriptLogo.png" class = " flex justify-center w-10  " />
             <h1 class = "tc1 text-7xl bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 m-6">Dot Connection</h1>
@@ -71,7 +95,7 @@
 
     <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
-    <div data-aos="slide-left"> 
+    <div data-aos="slide-right"> 
         <div class = "items-center  card c5 bg-opacity-60   rounded-2xl  w-1/2  m-auto p-5 min-w-fit ">
             <img src = "javascriptLogo.png" class = " flex justify-center w-10 " />
             <h1 class = "tc1 text-7xl bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 m-6" >Ballons</h1>
