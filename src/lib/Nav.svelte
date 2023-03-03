@@ -11,7 +11,6 @@
   
   <img src = "R.png " class = "" alt = "R">
 
-  <img/>
 
 </a>
 
