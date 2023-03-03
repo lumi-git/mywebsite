@@ -12,11 +12,4 @@
 
 
 
-<div class = "flex justify-center m-5  ">
-    
-    <h2 class = "text-5xl  font-extrabold text-amber-50  p-3 text-center ">please refer to my CV in the home page for formal inforations about my studies and jobs.</h2>
-    </div>
-
-<div class ="divider"></div>
-
 <EducationTimeline></EducationTimeline>
