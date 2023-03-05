@@ -63,7 +63,7 @@
 </div>
 <h1 class = "text-center  text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-10" >RONAN TREMOUREUX</h1>
 
-<h2 class = "text-center  text-4xl ms:text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10"> French Software - fullStack Developper</h2>
+<h2 class = "text-center  text-4xl ms:text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10"> French Software - fullStack Developer</h2>
 
 <div class="flex w-full justify-center">
     <div class = "pr-10">
@@ -107,8 +107,8 @@
                     
                     <div class ="m-1"></div>
             
-                    <p>Searching a internship abroad (out of France) for 4 month</p>
-                    <p>in software or web developpement.</p>
+                    <p>Searching an internship abroad (out of France) for 4 month</p>
+                    <p>in software or web developement.</p>
                     <div class ="m-1"></div>
                     <CalendarIcon size="20"/>
                     <p> From early June to end of september 2023</p>
@@ -123,7 +123,7 @@
 
         <div class="card-body items-center text-center">
           <h2 class="card-title text-7xl">RESUME</h2>
-          <p>A summurized version of this website ? here is my resume !</p>
+          <p>A summurized version of this website ? Here is my resume !</p>
 
           <div class = "">
             <div class="card-actions float-right p-2">
