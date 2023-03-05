@@ -2,13 +2,17 @@
 	import EducationTimeline from "$lib/EducationTimeline.svelte";
     import { onMount } from 'svelte';
     function setUrl(){
-        let bar = document.getElementById("NavUrl");
-        bar.textContent = "Education";
-    }
+	let bar = document.getElementsByClassName("NavUrl");
+	for (let i = 0; i < bar.length; i++) {
+		bar[i].textContent = "Education";
+	}
+
+}
     onMount(() => {
         setUrl()
 
 	})
+
 </script>
 
 <svelte:head>

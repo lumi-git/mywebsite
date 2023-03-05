@@ -5,9 +5,13 @@ import { GithubIcon } from 'svelte-feather-icons'
 import { onMount } from 'svelte';
 
 function setUrl(){
-    let bar = document.getElementById("NavUrl");
-    bar.textContent = "Projects / PyGine";
-}
+		let bar = document.getElementsByClassName("NavUrl");
+		for (let i = 0; i < bar.length; i++) {
+			bar[i].textContent = "Projects / PyGine";
+		}
+	
+	}
+
 onMount(() => {
     setUrl();
 })

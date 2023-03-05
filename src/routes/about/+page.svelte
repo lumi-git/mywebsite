@@ -1,18 +1,19 @@
 <script lang="ts">
-
-
-import { onMount } from 'svelte';
+    import { onMount } from 'svelte';
 	import AOS from 'aos';
-
-    function setUrl(){
-        let bar = document.getElementById("NavUrl");
-        bar.textContent = "About";
-    }
+	function setUrl(){
+		let bar = document.getElementsByClassName("NavUrl");
+		for (let i = 0; i < bar.length; i++) {
+			bar[i].textContent = "About";
+		}
+	
+	}
     onMount(() => {
         setUrl()
         AOS.init();
 
 	})
+
 </script>
 
 <svelte:head>

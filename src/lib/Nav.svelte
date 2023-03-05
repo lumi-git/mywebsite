@@ -1,14 +1,14 @@
 <script>
 
   import {BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,InfoIcon,LinkedinIcon, MenuIcon, ToolIcon } from 'svelte-feather-icons'
-  import { page } from '$app/stores';
+
 	import NavUrl from './NavUrl.svelte';
+
 
 
 
 </script>
 
-<svelte:window on:load={() => console.log('resized')} />
 
 <div class = "bg-base-300 flex" id = "fadeshow2">
 
@@ -88,16 +88,13 @@
     </ul>
   </div>
   <div class ="my-auto">
-    <NavUrl BaseUrl = "/"/>
+    <NavUrl BaseUrl = "/" />
   </div>
 </div>
 
 
 <!-- Nav component -->
 <div class="flex bg-base-300" id=fadeshow1>
-
-
-
 
 <!-- button to Home -->
 <div class="mt-2 mb-2 ml-10 flex mr-auto tooltip tooltip-right " data-tip="Back to Home">

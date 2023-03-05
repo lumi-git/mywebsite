@@ -3,9 +3,13 @@
     import { onMount } from 'svelte';
 
     function setUrl(){
-        let bar = document.getElementById("NavUrl");
-        bar.textContent = "Projects / Dots";
-    }
+		let bar = document.getElementsByClassName("NavUrl");
+		for (let i = 0; i < bar.length; i++) {
+			bar[i].textContent = "Projects / Dots";
+		}
+	
+	}
+
     onMount(() => {
         setUrl();
     })

@@ -16,11 +16,15 @@
       }
       import { afterUpdate, onMount } from 'svelte';
 	import AOS from 'aos';
-
+    
     function setUrl(){
-        let bar = document.getElementById("NavUrl");
-        bar.textContent = "HomePage";
-    }
+	let bar = document.getElementsByClassName("NavUrl");
+	for (let i = 0; i < bar.length; i++) {
+		bar[i].textContent = "Home Page";
+	}
+
+}
+
     onMount(() => {
         setUrl()
 		AOS.init()

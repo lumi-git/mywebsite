@@ -1,14 +1,19 @@
 <script lang="ts">
+	import Aos from 'aos';
     import { onMount } from 'svelte';
 
 	import {  LinkIcon } from 'svelte-feather-icons';
 
     function setUrl(){
-        let bar = document.getElementById("NavUrl");
-        bar.textContent = "Projects";
-    }
+	let bar = document.getElementsByClassName("NavUrl");
+	for (let i = 0; i < bar.length; i++) {
+		bar[i].textContent = "Projects ";
+	}
+
+}
     onMount(() => {
         setUrl()
+        Aos.init();
 	})
 </script>
 
