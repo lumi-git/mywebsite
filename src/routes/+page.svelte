@@ -14,19 +14,26 @@
           console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
       });
       }
-      import { onMount } from 'svelte';
+      import { afterUpdate, onMount } from 'svelte';
 	import AOS from 'aos';
 
-
+    function setUrl(){
+        let bar = document.getElementById("NavUrl");
+        bar.textContent = "HomePage";
+    }
     onMount(() => {
+        setUrl()
 		AOS.init()
 	})
+
 </script>
 
 <svelte:head>
     <title>Home - Ronan Tremoureux</title>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>
+
+<svelte:window on:scroll={setUrl} />
 
 <div class = " min-h-screen grid justify-center" >
     <div class = "m-auto" >
@@ -47,10 +54,10 @@
         </div>
         
     </div>
-    <a href = "#section_2" class = "scroll-smooth mx-auto">
-        <div class = "bg-cyan-600 rounded-full h-fit w-fit  hover:translate-y-2 duration-500 tooltip tooltip-bottom group" data-tip="Continue ! " >
+    <a href = "#section_2" class = "scroll-smooth mx-auto  ">
+        <div class = "bg-cyan-600 rounded-full h-fit w-fit  hover:translate-y-2 duration-500 tooltip tooltip-bottom group animate-pulse hover:animate-none " data-tip="Continue ! " >
             
-            <ArrowDownIcon size="38" class = "m-5 text-stone-900 group-hover:stroke-white"  />  
+            <ArrowDownIcon size="38" class = "m-5 text-stone-900 group-hover:stroke-white "  />  
         
         </div>
     </a>
@@ -61,7 +68,7 @@
 
 
 </div>
-<h1 class = "text-center  text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-10" >RONAN TREMOUREUX</h1>
+<h1 class = "text-center  text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-10 " >RONAN TREMOUREUX</h1>
 
 <h2 class = "text-center  text-4xl ms:text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10"> French Software - fullStack Developer</h2>
 
@@ -123,7 +130,7 @@
 
         <div class="card-body items-center text-center">
           <h2 class="card-title text-7xl">RESUME</h2>
-          <p>A summurized version of this website ? Here is my resume !</p>
+          <p >A summurized version of this website ? Here is my resume !</p>
 
           <div class = "">
             <div class="card-actions float-right p-2">

@@ -1,89 +1,95 @@
 <script>
 
   import {BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,InfoIcon,LinkedinIcon, MenuIcon, ToolIcon } from 'svelte-feather-icons'
-
-
+  import { page } from '$app/stores';
+	import NavUrl from './NavUrl.svelte';
 
 
 
 </script>
 
+<svelte:window on:load={() => console.log('resized')} />
 
-<div class = "bg-base-300">
-<div class="dropdown flex dropdown-bottom " id = "fadeshow2">
-  
-  <label tabindex="0" class="btn m-5  float-right"> <MenuIcon/>  </label>
+<div class = "bg-base-300 flex" id = "fadeshow2">
 
-  <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-fit">
-    <li class = "block">
-
-        <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/#section_2" rel="noreferrer noopener"  >
-          <HomeIcon class = "mx-auto"/> 
-          <p>Home</p>
-        </a>
-  
-    </li>
     
+  <div class="dropdown flex dropdown-bottom " >
+    
+    <label tabindex="0" class="btn m-5  float-right"> <MenuIcon/>  </label>
+
+    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-fit">
+      <li class = "block">
+
+          <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/#section_2" rel="noreferrer noopener"  >
+            <HomeIcon class = "mx-auto"/> 
+            <p>Home</p>
+          </a>
+    
+      </li>
+      
+      <li class = "block">
+
+        <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/education" rel="noreferrer noopener">
+          <BookIcon class = "mx-auto"/>
+          <p>Education & Jobs</p>
+        </a>
+
+    </li>
+
     <li class = "block">
 
-      <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/education" rel="noreferrer noopener">
-        <BookIcon class = "mx-auto"/>
-        <p>Education & Jobs</p>
+      <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/projects" rel="noreferrer noopener">
+        <BriefcaseIcon class = "mx-auto"/>
+        <p>Projects</p>
       </a>
 
   </li>
 
   <li class = "block">
 
-    <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/projects" rel="noreferrer noopener">
-      <BriefcaseIcon class = "mx-auto"/>
-      <p>Projects</p>
+    <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/skills" rel="noreferrer noopener">
+      <ToolIcon class = "mx-auto" />
+      <p>Skills</p>
     </a>
 
-</li>
-
-<li class = "block">
-
-  <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/skills" rel="noreferrer noopener">
-    <ToolIcon class = "mx-auto" />
-    <p>Skills</p>
-  </a>
-
-</li>
+  </li>
 
 
-<li class = "block">
+  <li class = "block">
 
-  <a class="tooltip tooltip-right w-full" data-tip="Back to Home" href="/about" rel="noreferrer noopener">
-    <p><InfoIcon class = "mx-auto"/></p>
-    <p>About</p>
-  </a>
+    <a class="tooltip tooltip-right w-full" data-tip="Back to Home" href="/about" rel="noreferrer noopener">
+      <p><InfoIcon class = "mx-auto"/></p>
+      <p>About</p>
+    </a>
 
-</li>
+  </li>
 
-<li>
-<div class = "divider divider-horizontal"></div>
+  <li>
+  <div class = "divider divider-horizontal"></div>
 
-</li>
+  </li>
 
-<li class = "block">
+  <li class = "block">
 
-  <a href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank" rel="noreferrer noopener" class = "flex my-auto"> <LinkedinIcon /> LinkedIn </a>
+    <a href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank" rel="noreferrer noopener" class = "flex my-auto"> <LinkedinIcon /> LinkedIn </a>
 
-</li>
+  </li>
 
-<li class = "block">
+  <li class = "block">
 
-  <a href = "https://github.com/lumi-git" target = "_blank" class = "flex my-auto"><GithubIcon /> My Github </a>
-      
+    <a href = "https://github.com/lumi-git" target = "_blank" class = "flex my-auto"><GithubIcon /> My Github </a>
+        
 
-  
+    
 
-</li>
+  </li>
 
 
-  </ul>
-</div>
+    </ul>
+  </div>
+  <div class ="my-auto">
+    <NavUrl BaseUrl = "/"/>
+  </div>
 </div>
 
 
@@ -98,9 +104,11 @@
   <a class="btn ease-in duration-300  bg-transparent " href="/#section_2" rel="noreferrer noopener"  >
     <HomeIcon />
   </a>
-  
 </div>
 
+<div class ="my-auto">
+  <NavUrl BaseUrl = "/"/>
+</div>
 
 <!-- button to Education -->
   <div class="mt-2 mb-2 flex ml-2 tooltip tooltip-bottom" data-tip="Discover my education timeline ! ">
