@@ -1,23 +1,101 @@
 <script>
 
-  import {BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,InfoIcon,LinkedinIcon, ToolIcon } from 'svelte-feather-icons'
+  import {BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,InfoIcon,LinkedinIcon, MenuIcon, ToolIcon } from 'svelte-feather-icons'
+
+
+
+
+
 </script>
 
 
-<!-- button to home page -->
-<div class="navbar bg-base-300">
-
-  <a href="/" rel="noreferrer noopener" class = "tooltip tooltip-right Logo  ml-10 flex flex-wrap mr-auto"  data-tip="Back to Home" >
+<div class = "bg-base-300">
+<div class="dropdown flex dropdown-bottom " id = "fadeshow2">
   
-  <img src = "R.png " class = "" alt = "R">
+  <label tabindex="0" class="btn m-5  float-right"> <MenuIcon/>  </label>
+
+  <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-fit">
+    <li class = "block">
+
+        <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/#section_2" rel="noreferrer noopener"  >
+          <HomeIcon class = "mx-auto"/> 
+          <p>Home</p>
+        </a>
+  
+    </li>
+    
+    <li class = "block">
+
+      <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/education" rel="noreferrer noopener">
+        <BookIcon class = "mx-auto"/>
+        <p>Education & Jobs</p>
+      </a>
+
+  </li>
+
+  <li class = "block">
+
+    <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/projects" rel="noreferrer noopener">
+      <BriefcaseIcon class = "mx-auto"/>
+      <p>Projects</p>
+    </a>
+
+</li>
+
+<li class = "block">
+
+  <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/skills" rel="noreferrer noopener">
+    <ToolIcon class = "mx-auto" />
+    <p>Skills</p>
+  </a>
+
+</li>
 
 
-</a>
+<li class = "block">
+
+  <a class="tooltip tooltip-right w-full" data-tip="Back to Home" href="/about" rel="noreferrer noopener">
+    <p><InfoIcon class = "mx-auto"/></p>
+    <p>About</p>
+  </a>
+
+</li>
+
+<li>
+<div class = "divider divider-horizontal"></div>
+
+</li>
+
+<li class = "block">
+
+  <a href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank" rel="noreferrer noopener" class = "flex my-auto"> <LinkedinIcon /> LinkedIn </a>
+
+</li>
+
+<li class = "block">
+
+  <a href = "https://github.com/lumi-git" target = "_blank" class = "flex my-auto"><GithubIcon /> My Github </a>
+      
+
+  
+
+</li>
+
+
+  </ul>
+</div>
+</div>
+
+
+<!-- Nav component -->
+<div class="flex bg-base-300" id=fadeshow1>
+
+
 
 
 <!-- button to Home -->
-<div class="mt-2 mb-2 flex mr-12 tooltip tooltip-bottom " data-tip="Back to Home">
-  <a class="btn ease-in duration-300  bg-transparent " href="/" rel="noreferrer noopener"  >
+<div class="mt-2 mb-2 ml-10 flex mr-auto tooltip tooltip-right " data-tip="Back to Home">
+  <a class="btn ease-in duration-300  bg-transparent " href="/#section_2" rel="noreferrer noopener"  >
     <HomeIcon />
   </a>
   
@@ -73,7 +151,7 @@
 
   <div class="mt-2 mb-2 flex ml-2 tooltip tooltip-bottom" data-tip="Link to my public github" >
     
-    <a href = "https://github.com/lumi-git" target = "_blank"><GithubIcon /></a>
+    <a href = "https://github.com/lumi-git" target = "_blank" class = "flex my-auto"><GithubIcon /></a>
       
       <a class = "divider" id=fadeshow1 href = "https://github.com/lumi-git" target = "_blank" rel="noreferrer noopener">My Github </a>
 
@@ -83,7 +161,7 @@
 
   <div class="mt-2 mb-2 ml-2 flex tooltip tooltip-left" data-tip="Add me on LinkedIn to discuss.">
     
-    <a href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank" rel="noreferrer noopener"><LinkedinIcon /></a>
+    <a href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank" rel="noreferrer noopener" class = "flex my-auto"> <LinkedinIcon /> </a>
       
       <a class = "divider" id=fadeshow1 href = "https://www.linkedin.com/in/ronan-tremoureux-139967233/" target = "_blank" rel="noreferrer noopener">LinkedIn</a>
 
