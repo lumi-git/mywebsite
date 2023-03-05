@@ -2,7 +2,15 @@
 
     
 import { GithubIcon } from 'svelte-feather-icons'
+import { onMount } from 'svelte';
 
+function setUrl(){
+    let bar = document.getElementById("NavUrl");
+    bar.textContent = "Projects / PyGine";
+}
+onMount(() => {
+    setUrl();
+})
 </script>
 
 

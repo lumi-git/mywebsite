@@ -1,6 +1,14 @@
 <script lang="ts">
 	import DotConnection from '$lib/DotConnection.svelte';
+    import { onMount } from 'svelte';
 
+    function setUrl(){
+        let bar = document.getElementById("NavUrl");
+        bar.textContent = "Projects / Dots";
+    }
+    onMount(() => {
+        setUrl();
+    })
 </script>
 
 

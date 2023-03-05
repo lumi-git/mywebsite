@@ -1,7 +1,12 @@
 <script lang="ts">
     import { onMount } from 'svelte';
 	import AOS from 'aos';
-onMount(() => {
+    function setUrl(){
+        let bar = document.getElementById("NavUrl");
+        bar.textContent = "Skills";
+    }
+    onMount(() => {
+        setUrl()
 		AOS.init()
 	})
 </script>

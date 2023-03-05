@@ -22,7 +22,7 @@
 </script>
 
 <audio id="myAudio">
-	<source src="buttonUp.mp3" type="audio/mpeg">
+	<source src="/buttonUp.mp3" type="audio/mpeg">
 </audio>
 
 <Nav></Nav>

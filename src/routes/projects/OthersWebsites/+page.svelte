@@ -1,3 +1,15 @@
+<script lang="ts">
+    import { onMount } from 'svelte';
+
+    function setUrl(){
+        let bar = document.getElementById("NavUrl");
+        bar.textContent = "Projects / Websites";
+    }
+    onMount(() => {
+        setUrl();
+    })
+
+</script>
 
 <h1 class = "text-center  text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">Redirections to my webstites</h1>
 

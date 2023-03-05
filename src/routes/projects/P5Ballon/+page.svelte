@@ -1,6 +1,14 @@
 <script lang="ts">
     import GameBox from '$lib/GameBox.svelte';
+    import { onMount } from 'svelte';
 
+    function setUrl(){
+        let bar = document.getElementById("NavUrl");
+        bar.textContent = "Projects / ballons";
+    }
+    onMount(() => {
+        setUrl();
+    })
 </script>
 
 

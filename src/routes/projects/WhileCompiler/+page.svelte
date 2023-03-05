@@ -1,5 +1,13 @@
 <script lang="ts">
+    import { onMount } from 'svelte';
 
+function setUrl(){
+    let bar = document.getElementById("NavUrl");
+    bar.textContent = "Projects / Compiler";
+}
+onMount(() => {
+    setUrl();
+})
 </script>
 
 
@@ -16,7 +24,7 @@
 
 <div class = " flex justify-center">
 
-    <a>This page is not finished yet stay tuned !</a>
+    <p>This page is not finished yet stay tuned !</p>
 
 </div>
 

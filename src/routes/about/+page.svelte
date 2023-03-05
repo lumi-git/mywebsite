@@ -4,9 +4,14 @@
 import { onMount } from 'svelte';
 	import AOS from 'aos';
 
-
+    function setUrl(){
+        let bar = document.getElementById("NavUrl");
+        bar.textContent = "About";
+    }
     onMount(() => {
-		AOS.init()
+        setUrl()
+        AOS.init();
+
 	})
 </script>
 
