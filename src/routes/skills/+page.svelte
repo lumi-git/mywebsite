@@ -7,6 +7,7 @@ onMount(() => {
 </script>
 
 <svelte:head>
+    <title>Skills - Ronan Tremoureux</title>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>
 

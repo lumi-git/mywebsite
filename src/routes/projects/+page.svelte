@@ -10,6 +10,7 @@
 </script>
 
 <svelte:head>
+    <title>Projects - Ronan Tremoureux</title>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>
 

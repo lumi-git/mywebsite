@@ -11,6 +11,7 @@ import { onMount } from 'svelte';
 </script>
 
 <svelte:head>
+    <title>About - Ronan Tremoureux</title>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>
 

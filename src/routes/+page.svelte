@@ -1,5 +1,5 @@
 <script lang="ts">
-      import { AirplayIcon, AtSignIcon,CalendarIcon,ClockIcon,DatabaseIcon,GithubIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
+      import { AirplayIcon, ArrowDownIcon, AtSignIcon,CalendarIcon,ClockIcon,DatabaseIcon,GithubIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
 
 
       //script for emailjs
@@ -24,15 +24,46 @@
 </script>
 
 <svelte:head>
+    <title>Home - Ronan Tremoureux</title>
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>
-  
-<img src="tachesmulti.PNG" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+
+<div class = " min-h-screen grid justify-center" >
+    <div class = "m-auto" >
+
+        <div class = "ml-5 mr-5 text-center">
+            <p class = "text-5xl  ">
+                Hi ! I am <clr class = "duration-700 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500  to-cyan-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-200 hover:to-cyan-500  transition-color ">Ronan Tremoureux </clr> 
+
+            </p>
+
+            <p class = "text-4xl mt-7 ">
+                Student in software engineering school
+            </p>
+
+            <p class = "text-4xl mt-7 ">
+                Discover more about myself by visiting this website ! 
+            </p>
+        </div>
+        
+    </div>
+    <a href = "#section_2" class = "scroll-smooth mx-auto">
+        <div class = "bg-cyan-600 rounded-full h-fit w-fit  hover:translate-y-2 duration-500 tooltip tooltip-bottom group" data-tip="Continue ! " >
+            
+            <ArrowDownIcon size="38" class = "m-5 text-stone-900 group-hover:stroke-white"  />  
+        
+        </div>
+    </a>
+</div>
+
+<div id = "section_2"></div>
+<div  class = "" >
 
 
-<h1 class = "text-center text-6xl text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-10">RONAN TREMOUREUX</h1>
+</div>
+<h1 class = "text-center  text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-10" >RONAN TREMOUREUX</h1>
 
-<h2 class = "text-center text-2xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10"> French Software - fullStack Developper</h2>
+<h2 class = "text-center  text-4xl ms:text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10"> French Software - fullStack Developper</h2>
 
 <div class="flex w-full justify-center">
     <div class = "pr-10">

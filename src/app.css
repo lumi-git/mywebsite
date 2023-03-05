@@ -4,14 +4,14 @@
 
 @media (max-width: 1026px) {
     #fadeshow1 { display: none; }
+
 }
 
-@media (max-width: 1026px) {
-    #fadeshow2 { display: block; }
-}
+
 
 body,html{
     size: 100%;
+    scroll-behavior: smooth;
 }
 
 .tc1{
