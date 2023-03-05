@@ -103,7 +103,7 @@
 </div>
 
 
-    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2 min-w-fit" data-aos="fade-up-left">
+    <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-auto sm:m-10 w-1/2 min-w-fit" data-aos="fade-up-left">
 
         <div class = "card-title">Electrical Habilitation</div>
         <div class = "card-body text-xl">
@@ -120,26 +120,54 @@
 <!-- programming language window -->
 <div class="flex w-full pb-10" data-aos="fade-up">
 
-    <div class="flex-grow  mockup-window bg-gray-700     bg-opacity-50 rounded-box place-items-center p-5 m-10 w-1/2 ">
+    <div class="flex-grow  mockup-window bg-gray-700     bg-opacity-50 rounded-box place-items-center p-5 m-10 w-1/2  ">
 
         <div class = "card-body text-center text-xl">
-            <div class = "text-5xl "> &#60 Programing languages /&#62; </div>
-            <div class = "flex justify-center">
-                <img src = "c++Logo.png" class = "w-1/12 h-1/12 p-3 my-auto" data-aos = "fade" data-aos-delay="0" alt = "C++"/>
+            <div class = "text-2xl sm:text-5xl "> &#60 Main programing languages /&#62; </div>
+
+            <!--if the screen is big enougth-->
+            <div class = "flex justify-center " id = fadeshow1 >
+                <img src = "c++Logo.png" class = " sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="0" alt = "C++"/>
                 
-                <img src = "C_Logo.png" class = "w-1/12 h-1/12 p-3 my-auto" data-aos = "fade" data-aos-delay="100" alt = "C" />
+                <img src = "C_Logo.png" class = "sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="100" alt = "C" />
 
-                <img src = "Csharp_Logo.png" class = "w-1/12 h-1/12  my-auto" data-aos = "fade" data-aos-delay="200"  alt = "C#" />
+                <img src = "Csharp_Logo.png" class = " sm:w-1/12 sm:h-1/12   my-auto" data-aos = "fade" data-aos-delay="200"  alt = "C#" />
 
-                <img src = "HTML5_logo.png" class = "w-1/12 h-1/12 p-3 my-auto" data-aos = "fade" data-aos-delay="300" alt = "Html" />
+                <img src = "HTML5_logo.png" class = "sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="300" alt = "Html" />
 
-                <img src = "javascriptLogo.png" class = "w-1/12 h-1/12 p-3 my-auto" data-aos = "fade" data-aos-delay="400" alt = "JavaScript" />
+                <img src = "javascriptLogo.png" class = "  sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="400" alt = "JavaScript" />
 
-                <img src = "pytonLogo.png" class = "w-1/12 h-1/12 p-3 my-auto" data-aos = "fade" data-aos-delay="500" alt = "Python" />
+                <img src = "pytonLogo.png" class = "sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="500" alt = "Python" />
 
-                <img src = "javaLogo.png" class = "w-1/12 h-1/12 p-3 my-auto" data-aos = "fade" data-aos-delay="600" alt = "Java" />
+                <img src = "javaLogo.png" class = "sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="600" alt = "Java" />
 
             </div>
+
+            <!--if the screen is small-->
+            <div class = "block  " id = fadeshow2 >
+                <div class = "flex">
+                    <img src = "c++Logo.png" class = "h-3/6  w-3/6 sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="0" alt = "C++"/>
+                    
+                    <img src = "C_Logo.png" class = "h-3/6  w-3/6  sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="100" alt = "C" />
+                </div>
+
+                <div class = "flex">   
+                    <img src = "Csharp_Logo.png" class = "h-3/6  w-3/6 sm:w-1/12 sm:h-1/12   my-auto" data-aos = "fade" data-aos-delay="200"  alt = "C#" />
+                    <img src = "HTML5_logo.png" class = "h-3/6  w-3/6 sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="300" alt = "Html" />
+                </div>
+                <div class = "flex"> 
+                    <img src = "javascriptLogo.png" class = "h-3/6  w-3/6  sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="400" alt = "JavaScript" />
+                    <img src = "pytonLogo.png" class = "h-3/6  w-3/6 sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="500" alt = "Python" />
+                </div>
+                <div class = "flex">
+                    <img src = "javaLogo.png" class = "h-3/6  w-3/6 sm:w-1/12 sm:h-1/12  p-3 my-auto" data-aos = "fade" data-aos-delay="600" alt = "Java" />
+                </div>
+
+            </div>
+
+
+
+
         </div>
     </div>
 </div>
@@ -150,30 +178,41 @@
     <div class="flex-grow  mockup-window bg-gray-700 bg-opacity-50 rounded-box place-items-center p-5 m-10 w-1/2 ">
 
         <div class = "card-body text-center text-xl">
-            <div class = "text-5xl "> IDE </div>
-            <div class = "flex justify-center">
+            <div class = "text-2xl sm:text-5xl ">Main IDE </div>
+            
+            <!--if the screen is big enougth-->
+            <div class = "flex justify-center " id = fadeshow1 >
 
-                <img src = "jetbrains_logo.webp" class = "w-1/12 h-1/12 p-3 my-auto mx-10" data-aos = "fade" data-aos-delay="0" alt = "jetbrains"/>
+                <img src = "jetbrains_logo.webp" class = " sm:w-1/12 sm:h-1/12 p-3 my-auto mx-auto" data-aos = "fade" data-aos-delay="0" alt = "jetbrains"/>
 
-                <img src = "vs_Logo.png" class = "w-1/12 h-1/12 mx-10 my-auto" data-aos = "fade" data-aos-delay="200"  alt = "VisualStudioCode" />
+                <img src = "vs_Logo.png" class = "sm:w-1/12 sm:h-1/12 mx-auto my-auto" data-aos = "fade" data-aos-delay="200"  alt = "VisualStudioCode" />
             </div>
+
+            <!--if the screen is small-->
+            <div class = "block justify-center " id = fadeshow2 >
+
+            <div class = "flex" >
+                <img src = "jetbrains_logo.webp" class = "h-3/6  w-3/6 p-3 my-auto mx-auto" data-aos = "fade" data-aos-delay="0" alt = "jetbrains"/>
+
+                <img src = "vs_Logo.png" class = "h-3/6  w-3/6 mx-auto my-auto" data-aos = "fade" data-aos-delay="200"  alt = "VisualStudioCode" />
+            </div>
+            </div>
+
         </div>
     </div>
 </div>
 
 
 <div class="flex w-full pb-10" data-aos="fade-up">
-
     <div class="flex-grow  mockup-window bg-gray-700 bg-opacity-50 rounded-box place-items-center p-5 m-10 w-1/2 ">
-
         <div class = "card-body text-center text-xl">
-            <div class = "text-5xl mb-5"> Operating systems </div>
-            <div class = "flex justify-center">
-
-                <img src = "Windows_logo.png" class = "w-1/12 h-1/12 p-3 my-auto mx-10" data-aos = "fade" data-aos-delay="0" alt = "Windows"/>
-
-                <img src = "MacOS_logo.png" class = "w-1/12 h-1/12 mx-10 my-auto" data-aos = "fade" data-aos-delay="150"  alt = "MacOS" />
-                <img src = "Linux-Logo.png" class = "w-2/12 h-2/12  my-auto" data-aos = "fade" data-aos-delay="300"  alt = "Linux" />
+            <div class = "text-2xl sm:text-5xl mb-5"> Operating systems </div>
+            <!--if the screen is big enougth-->
+            <div class = "block sm:flex justify-center">
+                
+                <img src = "Windows_logo.png" class = "h-3/6  w-3/6 sm:w-1/12 sm:h-1/12 p-3 my-auto mx-auto" data-aos = "fade" data-aos-delay="0" alt = "Windows"/>
+                <img src = "MacOS_logo.png" class = "h-3/6  w-3/6 sm:w-1/12 sm:h-1/12 mx-auto my-auto" data-aos = "fade" data-aos-delay="150"  alt = "MacOS" />
+                <img src = "Linux-Logo.png" class = "h-3/6  w-3/6 sm:w-2/12 sm:h-2/12 mx-auto my-auto" data-aos = "fade" data-aos-delay="300"  alt = "Linux" />
             </div>
         </div>
     </div>

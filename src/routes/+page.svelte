@@ -16,7 +16,7 @@
       }
       import { afterUpdate, onMount } from 'svelte';
 	import AOS from 'aos';
-    
+
     function setUrl(){
 	let bar = document.getElementsByClassName("NavUrl");
 	for (let i = 0; i < bar.length; i++) {
@@ -59,9 +59,9 @@
         
     </div>
     <a href = "#section_2" class = "scroll-smooth mx-auto  ">
-        <div class = "bg-cyan-600 rounded-full h-fit w-fit  hover:translate-y-2 duration-500 tooltip tooltip-bottom group animate-pulse hover:animate-none " data-tip="Continue ! " >
+        <div class = "bg-cyan-600 rounded-full h-fit w-fit  hover:translate-y-2 duration-500 tooltip tooltip-warning tooltip-bottom  group animate-pulse hover:animate-none " data-tip="Continue ! " >
             
-            <ArrowDownIcon size="38" class = "m-5 text-stone-900 group-hover:stroke-white "  />  
+            <ArrowDownIcon size="38" class = "m-5 text-stone-900 group-hover:stroke-white "  />
         
         </div>
     </a>
@@ -72,21 +72,21 @@
 
 
 </div>
-<h1 class = "text-center  text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-10 " >RONAN TREMOUREUX</h1>
+<h1 class = "text-center  text-4xl sm:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-10 " >RONAN TREMOUREUX</h1>
 
-<h2 class = "text-center  text-4xl ms:text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10"> French Software - fullStack Developer</h2>
+<h2 class = "text-center  text-2xl ms:text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 my-10"> French Software - fullStack Developer</h2>
 
-<div class="flex w-full justify-center">
-    <div class = "pr-10">
+<div class="block sm:flex w-full justify-center">
+    <div class = "m-10 sm:pr-10">
         <div class="mockup-window bg-base-200 border border-indigo-400 border-opacity-50 border-dashed ">
             <div class = " grid place-items-center ">
                 <MapIcon size="38"/>
 
                 <p class = "text-4xl">Current Status</p>
                 </div>
-            <div class="flex justify-center  bg-base-200 pl-10 pr-10">
+            <div class="flex justify-center  bg-base-200 p-10">
 
-                <div class="grid flex-grow rounded-box place-items-center  m-5 w-1/2">
+                <div class="grid flex-grow rounded-box place-items-center  mx-auto sm:m-5 w-1/2">
                 <div class ="m-1"></div>
                 <p>Second year in software engineering school at ESIR</p>
                 <p>Located at Rennes1 University From France </p>
@@ -104,17 +104,17 @@
 
     <div class="divider divider-horizontal"></div>
 
-    <div class = "pl-10">
+    <div class = "m-10 sm:pl-10">
         <div class="mockup-window border bg-base-200 border-indigo-400 border-opacity-50 border-dashed ">
             <div class = " grid place-items-center  ">
                 <SearchIcon size="38"/>
 
                 <p class = "text-4xl">Current Research</p>
                 </div>
-            <div class="flex justify-center  bg-base-200 pl-10 pr-10">
+            <div class="flex justify-center  bg-base-200 p-10">
 
 
-                <div class="flex-grow card rounded-box place-items-center m-5 w-1/2 " >
+                <div class="flex-grow card rounded-box place-items-center mx-auto sm:m-5 w-1/2 " >
                     
                     <div class ="m-1"></div>
             
@@ -129,7 +129,7 @@
     </div>
 </div>
 
-<div class = "content-center  items-center flex m-10 " data-aos="zoom-in" >
+<div class = "content-center  items-center block sm:flex m-10 " data-aos="zoom-in" >
     <div class="card w-1/2 bg-indigo-300 bg-opacity-40 shadow-xl m-auto min-w-fit  ">
 
         <div class="card-body items-center text-center">
@@ -148,14 +148,12 @@
       </div>
 </div>
 
-
-
 <div class="divider "></div> 
 
 <div data-aos="fade-up" >
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">        
-            <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me at Contact@ronantremoureux.fr</h2>
+            <h2 class="mb-4 text-2xl sm:text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">Contact Me at Contact@ronantremoureux.fr</h2>
             <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Interrested in my profile ? leave me a message i'll answer the fastest as possible.</p>
             <form action="#" class="space-y-8" on:submit|preventDefault={sendEmail}>
                 <div>

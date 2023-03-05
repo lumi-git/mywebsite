@@ -56,10 +56,10 @@
     </a>
 </div>
 
-<div class="flex w-full" >
+<div class="block sm:flex w-full" >
 
 
-    <a data-aos-offset= "200" data-aos="zoom-in-down" class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "https://le-shaker.com/coding-battle/" target="_blank" rel="noreferrer noopener">
+    <a data-aos-offset= "200" data-aos="zoom-in-down" class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 my-5 mx-auto w-1/2" href = "https://le-shaker.com/coding-battle/" target="_blank" rel="noreferrer noopener">
 
         <div class = "card-title">Coding Battle </div>
         <div class = "card-title">2019 - 2022</div>
@@ -68,7 +68,7 @@
         </div>
     </a>
 
-    <a data-aos-offset= "280" data-aos="zoom-in-down" class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 w-1/2" href = "#" target="_blank" rel="noreferrer noopener">
+    <a data-aos-offset= "280" data-aos="zoom-in-down" class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 my-5 mx-auto w-1/2" href = "#" target="_blank" rel="noreferrer noopener">
 
         <div class = "card-title">Battle Dev</div>
         <div class = "card-title">2019</div>

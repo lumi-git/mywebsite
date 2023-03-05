@@ -10,17 +10,17 @@
 </script>
 
 
-<div class = "bg-base-300 flex" id = "fadeshow2">
+<div class = " flex w-full bg-base-300  " id = "fadeshow2">
 
     
   <div class="dropdown flex dropdown-bottom " >
     
     <label tabindex="0" class="btn m-5  float-right"> <MenuIcon/>  </label>
 
-    <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-fit">
+    <ul tabindex="0" class="   dropdown-content menu p-2 shadow  bg-cyan-900    rounded-box w-fit bg-opacity-80 backdrop-blur-sm">
       <li class = "block">
 
-          <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/#section_2" rel="noreferrer noopener"  >
+          <a class=" tooltip tooltip-right w-full " data-tip="Back to Home" href="/#section_2" rel="noreferrer noopener"  >
             <HomeIcon class = "mx-auto"/> 
             <p>Home</p>
           </a>

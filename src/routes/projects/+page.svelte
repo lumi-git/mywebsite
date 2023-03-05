@@ -7,7 +7,7 @@
     function setUrl(){
 	let bar = document.getElementsByClassName("NavUrl");
 	for (let i = 0; i < bar.length; i++) {
-		bar[i].textContent = "Projects ";
+		bar[i].textContent = "Projects";
 	}
 
 }
