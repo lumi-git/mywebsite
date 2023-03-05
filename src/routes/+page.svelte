@@ -39,33 +39,39 @@
 
 <svelte:window on:scroll={setUrl} />
 
-<div class = " min-h-screen grid justify-center" >
-    <div class = "m-auto" >
+<div class = " min-h-screen grid  " >
+    <div class = "my-auto  mb-8" >
 
-        <div class = "ml-5 mr-5 text-center">
-            <p class = "text-5xl  ">
-                Hi ! I am <clr class = "duration-700 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500  to-cyan-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-200 hover:to-cyan-500  transition-color ">Ronan Tremoureux </clr> 
+        <div class = "ml-5 mr-5 text-center ">
+            <p class = "text-7xl mb-5 ">
+                <click class = "font-semibold hover:text-orange-400   "> Hi ! </click> I am <clr class = "duration-700 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500  to-cyan-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-200 hover:to-cyan-500  transition-color ">Ronan Tremoureux </clr> 
 
             </p>
 
             <p class = "text-4xl mt-7 ">
-                Student in software engineering school
+                
+                <hover_ class = "hover:underline"> French student </hover_> in software engineering school
             </p>
 
-            <p class = "text-4xl mt-7 ">
+            <p class = "text-4xl mt-7 hover:animate-[wiggle_1s_ease-in-out_infinite]">
                 Discover more about myself by visiting this website ! 
             </p>
         </div>
         
     </div>
-    <a href = "#section_2" class = "scroll-smooth mx-auto  ">
-        <div class = "bg-cyan-600 rounded-full h-fit w-fit  hover:translate-y-2 duration-500 tooltip tooltip-warning tooltip-bottom  group animate-pulse hover:animate-none " data-tip="Continue ! " >
+
+    <a href = "#section_2" class = "scroll-smooth mx-auto mt-10 ">
+        <div class = "bg-cyan-600 rounded-full  hover:translate-y-2 duration-500 tooltip tooltip-warning tooltip-bottom  group animate-pulse hover:animate-none " data-tip="Continue ! " >
             
-            <ArrowDownIcon size="38" class = "m-5 text-stone-900 group-hover:stroke-white "  />
+            <ArrowDownIcon size="38" class = "m-5 text-stone-900 group-hover:stroke-white"/>
         
         </div>
     </a>
 </div>
+
+
+
+
 
 <div id = "section_2"></div>
 <div  class = "" >
