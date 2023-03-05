@@ -1,6 +1,12 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-
+	function setUrl(){
+		let bar = document.getElementsByClassName("NavUrl");
+		for (let i = 0; i < bar.length; i++) {
+			bar[i].textContent = "Projects / Ant Farm";
+		}
+	
+	}
     onMount(() => {
         setUrl();
     })
