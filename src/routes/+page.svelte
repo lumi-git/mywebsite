@@ -1,5 +1,7 @@
 <script lang="ts">
-      import { AirplayIcon, ArrowDownIcon, AtSignIcon,CalendarIcon,ClockIcon,DatabaseIcon,GithubIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
+    import { AirplayIcon, ArrowDownIcon, AtSignIcon,CalendarIcon,ClockIcon,DatabaseIcon,GithubIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
+
+      
 
 
       //script for emailjs
@@ -23,12 +25,32 @@
 		bar[i].textContent = "Home Page";
 	}
 
-}
+    }
+
+    function setbgBehavior(){
+
+        const home = document.querySelector('.BGSlideMouse');
+
+        home.addEventListener('mousemove', (e) => {
+        const x = e.clientX / window.innerWidth;
+        const y = e.clientY / window.innerHeight;
+        home.style.backgroundPosition = `${x * 100}% ${y * 100}%`;
+    }
+    )
+    }
+
+
 
     onMount(() => {
-        setUrl()
+        setUrl();
+        setbgBehavior();
 		AOS.init()
-	})
+
+
+    });
+
+
+
 
 </script>
 
@@ -37,9 +59,10 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </svelte:head>
 
-<svelte:window on:scroll={setUrl} />
+<svelte:window on:scroll={setUrl} on:resize={setbgBehavior}/>
 
-<div class = " min-h-screen grid  " >
+
+<div class = " min-h-screen grid BGSlideMouse" >
     <div class = "my-auto  mb-8" >
 
         <div class = "ml-5 mr-5 text-center ">
@@ -179,3 +202,6 @@
         </div>
     </section>
 </div>
+
+
+

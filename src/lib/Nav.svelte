@@ -4,13 +4,10 @@
 
 	import NavUrl from './NavUrl.svelte';
 
-
-
-
 </script>
 
 
-<div class = " flex w-full bg-base-300  " id = "fadeshow2">
+<div class = " flex w-full bg-base-300 " id = "fadeshow2">
 
     
   <div class="dropdown flex dropdown-bottom " >
@@ -94,7 +91,7 @@
 
 
 <!-- Nav component -->
-<div class="flex bg-base-300" id=fadeshow1>
+<div class="flex bg-base-300 drop-shadow-xl shadow   " id=fadeshow1>
 
 <!-- button to Home -->
 <div class="mt-2 mb-2 ml-10 flex mr-auto tooltip tooltip-right " data-tip="Back to Home">

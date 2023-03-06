@@ -26,6 +26,17 @@ onMount(() => {
     </div>
 </div>
 
+<div class = "bg-slate-800 rounded p-5 ">
+    <div>
+        During the years
+    </div>
+
+
+</div>
+
+
+
+
 <div class = " flex justify-center">
 
     <p>This page is not finished yet stay tuned !</p>
