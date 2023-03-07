@@ -42,10 +42,8 @@
 
 
     onMount(() => {
-        setUrl();
-        setbgBehavior();
-		AOS.init()
 
+        setbgBehavior();
 
     });
 

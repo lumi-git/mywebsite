@@ -1,20 +1,20 @@
 <script>
 
-  import {BookIcon,BriefcaseIcon,GithubIcon,HomeIcon,InfoIcon,LinkedinIcon, MenuIcon, ToolIcon } from 'svelte-feather-icons'
+  import {BookIcon,BriefcaseIcon,CrosshairIcon,GithubIcon,HomeIcon,InfoIcon,LinkedinIcon, MenuIcon, ToolIcon, XIcon } from 'svelte-feather-icons'
 
 	import NavUrl from './NavUrl.svelte';
 
 </script>
 
 
-<div class = " flex w-full bg-base-300 " id = "fadeshow2">
+<div class = " flex w-full bg-base-300 h-16 drop-shadow-xl shadow" id = "fadeshow2">
 
     
-  <div class="dropdown flex dropdown-bottom " >
+  <div class="dropdown flex dropdown-bottom  " >
     
-    <label tabindex="0" class="btn m-5  float-right"> <MenuIcon/>  </label>
+    <label tabindex="0" class="btn m-2  float-right my-auto MenuBtn"> <MenuIcon size = 19/>  </label>
 
-    <ul tabindex="0" class="   dropdown-content menu p-2 shadow  bg-cyan-900    rounded-box w-fit bg-opacity-80 backdrop-blur-sm">
+    <ul tabindex="0" class="   dropdown-content menu p-2 shadow rounded-br-xl   bg-cyan-900 w-fit bg-opacity-80 backdrop-blur-sm">
       <li class = "block">
 
           <a class=" tooltip tooltip-right w-full " data-tip="Back to Home" href="/#section_2" rel="noreferrer noopener"  >
@@ -91,7 +91,7 @@
 
 
 <!-- Nav component -->
-<div class="flex bg-base-300 drop-shadow-xl shadow   " id=fadeshow1>
+<div class="flex bg-base-300 drop-shadow-xl shadow " id=fadeshow1>
 
 <!-- button to Home -->
 <div class="mt-2 mb-2 ml-10 flex mr-auto tooltip tooltip-right " data-tip="Back to Home">
