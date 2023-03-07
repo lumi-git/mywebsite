@@ -28,7 +28,7 @@
 
 
 
-<div id = itemsHolder >
+<div id = itemsHolder class = "overflow-hidden p-10" >
 
 
 
