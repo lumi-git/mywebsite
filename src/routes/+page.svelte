@@ -44,7 +44,7 @@
     onMount(() => {
 
         setbgBehavior();
-
+        AOS.init();
     });
 
 
