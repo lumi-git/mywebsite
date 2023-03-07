@@ -28,7 +28,7 @@
 
 <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
-
+<div id = holder class = "overflow-hidden p-10" >
 <h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">Contests</h2>
 <div class="flex w-full">
 
@@ -82,3 +82,5 @@
 <div class = "divider m-10"></div>
 
 <h2 data-aos="slide-left" class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-32 p-5">In Coming..</h2>
+
+</div>

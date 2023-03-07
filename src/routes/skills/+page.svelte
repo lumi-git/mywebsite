@@ -23,7 +23,7 @@
 
 <div class="divider w-20 m-auto mt-20 mb-20">  </div> 
 
-<div class="sm:flex block w-full">
+<div class="sm:flex block w-full ">
 
     <div class="grid flex-grow card bg-base-300 rounded-box place-items-center p-5 m-10 sm:w-1/2"data-aos="fade-up">
         <div class = "card-title">Team Working</div>
@@ -116,7 +116,7 @@
 <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
 <h2 class = "text-center text-5xl  font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5 p-2" data-aos="fade" >Working Tools</h2>
-
+<div id = holder class = "overflow-hidden p-10" >
 <!-- programming language window -->
 <div class="flex w-full pb-10" data-aos="fade-up">
 
@@ -216,4 +216,6 @@
             </div>
         </div>
     </div>
+</div>
+
 </div>
