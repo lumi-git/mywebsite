@@ -12,9 +12,9 @@
     
   <div class="dropdown flex dropdown-bottom  " >
     
-    <label tabindex="0" class="btn m-2  float-right my-auto MenuBtn"> <MenuIcon size = 19/>  </label>
+    <label tabindex="-1" class="btn m-2 float-right my-auto MenuBtn"> <MenuIcon size = 19/></label>
 
-    <ul tabindex="0" class="   dropdown-content menu p-2 shadow rounded-br-xl   bg-cyan-900 w-fit bg-opacity-80 backdrop-blur-sm">
+    <ul tabindex="-1" class="   dropdown-content menu p-2 shadow rounded-br-xl   bg-cyan-900 w-fit bg-opacity-80 backdrop-blur-sm">
       <li class = "block">
 
           <a class=" tooltip tooltip-right w-full " data-tip="Back to Home" href="/#section_2" rel="noreferrer noopener"  >
@@ -26,7 +26,7 @@
       
       <li class = "block">
 
-        <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/education" rel="noreferrer noopener">
+        <a class=" tooltip tooltip-right w-full" data-tip="Education" href="/education" rel="noreferrer noopener">
           <BookIcon class = "mx-auto"/>
           <p>Education & Jobs</p>
         </a>
@@ -35,7 +35,7 @@
 
     <li class = "block">
 
-      <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/projects" rel="noreferrer noopener">
+      <a class=" tooltip tooltip-right w-full" data-tip="Projects" href="/projects" rel="noreferrer noopener">
         <BriefcaseIcon class = "mx-auto"/>
         <p>Projects</p>
       </a>
@@ -44,7 +44,7 @@
 
   <li class = "block">
 
-    <a class=" tooltip tooltip-right w-full" data-tip="Back to Home" href="/skills" rel="noreferrer noopener">
+    <a class=" tooltip tooltip-right w-full" data-tip="Skills" href="/skills" rel="noreferrer noopener">
       <ToolIcon class = "mx-auto" />
       <p>Skills</p>
     </a>
@@ -54,17 +54,14 @@
 
   <li class = "block">
 
-    <a class="tooltip tooltip-right w-full" data-tip="Back to Home" href="/about" rel="noreferrer noopener">
+    <a class="tooltip tooltip-right w-full" data-tip="About" href="/about" rel="noreferrer noopener">
       <p><InfoIcon class = "mx-auto"/></p>
       <p>About</p>
     </a>
 
   </li>
 
-  <li>
-  <div class = "divider divider-horizontal"></div>
-
-  </li>
+  
 
   <li class = "block">
 
