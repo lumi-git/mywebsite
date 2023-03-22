@@ -2,6 +2,20 @@
     import { AirplayIcon, ArrowDownIcon, AtSignIcon,CalendarIcon,ClockIcon,DatabaseIcon,GithubIcon,MapIcon,SearchIcon } from 'svelte-feather-icons'
 
       
+    function setHover(){
+        let bar = document.getElementsByClassName("hover_");
+        for (let i = 0; i < bar.length; i++) {
+            bar[i].addEventListener("mouseover", function() {
+                bar[i].classList.add("borderWhite");
+            });
+            bar[i].addEventListener("mouseout", function() {
+                bar[i].classList.remove("borderWhite");
+            });
+        }
+    }
+
+
+
 
 
       //script for emailjs
@@ -42,7 +56,7 @@
 
 
     onMount(() => {
-
+        setHover();
         setbgBehavior();
         AOS.init();
     });
@@ -65,16 +79,16 @@
 
         <div class = "ml-5 mr-5 text-center ">
             <p class = "text-7xl mb-5 ">
-                <click class = "font-semibold hover:text-orange-400   "> Hi ! </click> I am <clr class = "duration-700 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500  to-cyan-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-200 hover:to-cyan-500  transition-color ">Ronan Tremoureux </clr> 
+                <click class = "font-semibold hover:text-orange-400"> Hi ! </click> I am <clr class = "duration-700 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500  to-cyan-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-200 hover:to-cyan-500  transition-color ">Ronan Tremoureux </clr> 
 
             </p>
 
             <p class = "text-4xl mt-7 ">
                 
-                <hover_ class = "hover:underline"> French student </hover_> in software engineering school
+                <hover_ class = "hover:underline "> French student </hover_> in software engineering school
             </p>
 
-            <p class = "text-4xl mt-7 hover:animate-[wiggle_1s_ease-in-out_infinite]">
+            <p class = "text-4xl mt-7 hover:animate-[wiggle_1s_ease-in-out_infinite]  ">
                 Discover more about myself by visiting this website ! 
             </p>
         </div>
@@ -89,9 +103,6 @@
         </div>
     </a>
 </div>
-
-
-
 
 
 <div id = "section_2"></div>
@@ -109,12 +120,12 @@
             <div class = " grid place-items-center ">
                 <MapIcon size="38"/>
 
-                <p class = "text-4xl">Current Status</p>
+                <p class = "text-4xl ">Current Status</p>
                 </div>
             <div class="flex justify-center  bg-base-200 p-10">
 
                 <div class="grid flex-grow rounded-box place-items-center  mx-auto sm:m-5 w-1/2">
-                <div class ="m-1"></div>
+                <div class ="m-1 "></div>
                 <p>Second year in software engineering school at ESIR</p>
                 <p>Located at Rennes1 University From France </p>
                 <div class ="m-1"></div>
@@ -145,11 +156,11 @@
                     
                     <div class ="m-1"></div>
             
-                    <p>Searching an internship abroad (out of France) for 4 month</p>
+                    <p>professional contract (in France) </p>
                     <p>in software or web developement.</p>
                     <div class ="m-1"></div>
                     <CalendarIcon size="20"/>
-                    <p> From early June to end of september 2023</p>
+                    <p> During 2024</p>
                 </div>
             </div>
         </div>
