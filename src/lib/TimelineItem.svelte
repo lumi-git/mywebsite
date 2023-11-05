@@ -2,6 +2,7 @@
     // component props
     // Camel case not supported for props, see drawback section.
     export let card_title, card_desc,card_content;
+    import { ApertureIcon, CheckSquareIcon, MapIcon, MapPinIcon } from "svelte-feather-icons";
 </script>
 
 
@@ -14,8 +15,8 @@
             </div>
 
         </div>
-        <div class="text-zinc-300">
-            {card_desc}
+        <div class="text-zinc-300 flex">
+            <MapPinIcon class="px-1 text-purple-500" />{card_desc}
         </div>
     <div class = "text-zinc-300 pt-3">
         {card_content}

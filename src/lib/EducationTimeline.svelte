@@ -36,8 +36,11 @@ import { onMount } from 'svelte';
                 <!--line column-->
                 <DividerTimeline content = "2023"/>
                 <!--right column-->
-                <div class="w-2/5 px-2 py-10">
-                </div>
+                <TimelineItem  card_title="Internship at LCSB (Luxembourg center for system biomedecine)" card_desc = "At University of Luxembourg"  
+                card_content = "During this internship, I learned how to work in a software research laboratory. I learned how to work with a team on a IT project.
+                I also learned how to create a software based on various technologies such as python, bash, docker, gitlab webhook etc. It has been a very rewarding experience.
+                "
+                />
             </div>
 
 
