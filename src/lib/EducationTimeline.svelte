@@ -25,8 +25,8 @@ import { onMount } from 'svelte';
             <div class="flex flex-row w-full" >
                 <!-- left col -->
 
-                <TimelineItem  card_title="Second year of ESIR Developper engineering shool" card_desc = "At Rennes University"  
-                card_content = " During my year of engineering school, I learned how to developp a software from scratch, using the right tools.
+                <TimelineItem  card_title="Thirs year of ESIR Developper engineering shool" card_desc = "At Rennes University"  
+                card_content = " During my years of engineering school, I learned how to developp a software from scratch, using the right tools.
                 I also learned the goods and bads ways of doing things by leaning for example devOps methodes.
                 I also learned how to work in a team and how to manage a project, that are notions as important as knowing how to develop.
                 "
