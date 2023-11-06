@@ -26,6 +26,19 @@
 
 <div id = itemsHolder class = "overflow-hidden p-10" >
 
+    <div class="divider w-20 m-auto mt-20 mb-20"></div> 
+
+    <div data-aos="slide-right"> 
+
+        <div class = "items-center card quickqr bg-opacity-60 rounded-2xl w-1/2 m-auto p-5 min-w-fit ">
+          
+            <img src = "javascriptLogo.png" class = " flex  w-10 " alt = "Python" />
+            <h1 class = "tc1 text-3xl sm:text-7xl  m-6" >quickQR</h1>
+            <p class = "tc1 text-center">A ultra ligth design for qr code generator</p>
+            <a href = "/projects/quickqr" class = "btn  m-6">About it </a>
+        
+        </div>
+    </div>
 
     <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 

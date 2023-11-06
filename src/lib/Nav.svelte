@@ -7,15 +7,15 @@
 </script>
 
 
-<div class = " flex w-full bg-base-300 h-16 drop-shadow-xl shadow" id = "fadeshow2">
+<div class = " flex w-full bg-base-300 h-16 drop-shadow-xl shadow navbarmenu" id = "fadeshow2">
 
     
-  <div class="dropdown flex dropdown-bottom  " >
+  <div class="dropdown flex dropdown-bottom " >
     
-    <label tabindex="-1" class="btn m-2 float-right my-auto MenuBtn"> <MenuIcon size = 19/></label>
+    <label tabindex="-1" class="btn m-2 float-right my-auto MenuBtn "> <MenuIcon size = 19/></label>
 
-    <ul tabindex="-1" class="   dropdown-content menu p-2 shadow rounded-br-xl   bg-cyan-900 w-fit bg-opacity-80 backdrop-blur-sm">
-      <li class = "block">
+    <ul tabindex="-1" class=" dropdown-content menu p-2 shadow rounded-br-xl  bg-cyan-900 w-fit bg-opacity-90 backdrop-blur-sm">
+      <li class = "block ">
 
           <a class=" tooltip tooltip-right w-full " data-tip="Back to Home" href="/#section_2" rel="noreferrer noopener"  >
             <HomeIcon class = "mx-auto"/> 

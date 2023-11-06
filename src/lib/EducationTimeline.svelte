@@ -30,7 +30,7 @@ import { onMount } from 'svelte';
                 I also learned the goods and bads ways of doing things by leaning for example devOps methodes.
                 I also learned how to work in a team and how to manage a project, that are notions as important as knowing how to develop.
                 "
-
+                
                 />
                 
                 <!--line column-->

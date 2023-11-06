@@ -16,7 +16,10 @@
 
 }
 
-
+.navbarmenu{
+    position: relative;
+    z-index: 100000;
+}
 
 html,body{
     size: 100%;
@@ -84,4 +87,8 @@ html,body{
 
 .Logo{
     width: 2%;
+}
+
+.quickqr{
+    background-color : #b99fef;
 }

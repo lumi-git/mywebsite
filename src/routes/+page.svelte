@@ -122,13 +122,13 @@
 
                 <p class = "text-4xl ">Current Status</p>
                 </div>
-            <div class="flex justify-center  bg-base-200 p-10">
+            <div class="flex justify-center  bg-base-200 p-5">
 
                 <div class="grid flex-grow rounded-box place-items-center  mx-auto sm:m-5 w-1/2">
                 <div class ="m-1 "></div>
-                <p>Second year in software engineering school at ESIR</p>
+                <p>Third year in software engineering school at ESIR</p>
                 <p>Located at Rennes1 University From France </p>
-                <div class ="m-1"></div>
+                <div class ="mx-1"></div>
                     
                 <ClockIcon size="20"/>
         
@@ -149,15 +149,15 @@
 
                 <p class = "text-4xl">Current Research</p>
                 </div>
-            <div class="flex justify-center  bg-base-200 p-10">
+            <div class="flex justify-center  bg-base-200 p-5">
 
 
                 <div class="flex-grow card rounded-box place-items-center mx-auto sm:m-5 w-1/2 " >
                     
-                    <div class ="m-1"></div>
+                    <div class ="mx-1"></div>
             
-                    <p>professional contract (in France) </p>
-                    <p>in software or web developement.</p>
+                    <p>I am not searching anyrhing now. </p>
+                    <p>But you can contact me ! </p>
                     <div class ="m-1"></div>
                     <CalendarIcon size="20"/>
                     <p> During 2024</p>
@@ -172,9 +172,10 @@
 
         <div class="card-body items-center text-center">
           <h2 class="card-title text-7xl">RESUME</h2>
+          <p class = 'text-red-200'> (NOT UP TO DATE)</p>
           <p >A summurized version of this website ? Here is my resume !</p>
 
-          <div class = "">
+          <div>
             <div class="card-actions float-right p-2">
                 <a class="btn btn-primary bg-indigo-500 border-indigo-500 " download href = "CV.pdf" target = "_blank" rel="noreferrer noopener">Download</a>  
             </div>
