@@ -20,9 +20,25 @@ import { onMount } from 'svelte';
 <div class="min-h-screen hidden sm:flex ">
     <div class="min-h-screen flex justify-center">
         <div class="w-2/3 mx-auto">
-            <div class="flex flex-row w-full" />
+
             
 
+            <div class="flex flex-row w-full" >
+                <!-- left col -->
+
+                <div class="w-2/5 px-2 py-10 text-center">
+
+                    <p class = "text-5xl hover:opacity-30 duration-200">Education</p>
+                
+                </div>
+                
+                <!--line column-->
+                <DividerTimeline content=Now/>
+                <div class="w-2/5 px-2 py-10  text-center ">
+                    <p class = "text-5xl hover:opacity-30 duration-200">Jobs</p>                    
+                
+                </div>
+            </div>
 
             <div class="flex flex-row w-full" >
                 <!-- left col -->
@@ -33,7 +49,7 @@ import { onMount } from 'svelte';
                 />
                 
                 <!--line column-->
-                <DividerTimeline content = "Now 2024"/>
+                <DividerTimeline content = "2024"/>
                 <!--right column-->
                 <TimelineItem  card_title="professional contrat" card_desc = "At CapGemini Rennes"  
                 card_content = "During this last year of school, I will also work at capgemini. I just started my time at capgemini. I will post later about my experience here.

@@ -59,29 +59,41 @@ html,body{
 }
 
 .tc1{
+    
     color : #343f4a 
 }
 
 .c1{
+    border-width: 2px;
+    border-color: #4c239e;
     background-color : #44D77A;
     
 }
 
 .c2{
+    border-width: 2px;
+    border-color: #4c239e;
     background-color : #FFD77A;
 }
 
 .c3{
+    border-width: 2px;
+    border-color: #4c239e;
     background-color : #FEBFB4;
 }
 .c4{
+    border-width: 2px;
+    border-color: #4c239e;
     background-color : #DBBFE8;
 }
 .c5{
+    border-width: 2px;
+    border-color: #4c239e;
     background-color : #B5DAFE;
 }
 
 .Link{
+    
     background-color : #b99fef;
 }
 
@@ -89,6 +101,22 @@ html,body{
     width: 2%;
 }
 
-.quickqr{
-    background-color : #b99fef;
+.quickqr {
+    background-color: #b99fef; /* Fallback for older browsers */
+    background-clip: padding-box; /* This ensures the gradient background is only applied to the padding area. */
+    border: 2px solid transparent; /* We set a transparent border... */
+    position: relative; /* Position relative is required to position the pseudo-element */
+    padding: 10px; /* Adjust padding as needed */
+}
+
+/* Create a pseudo-element for the gradient border */
+.quickqr::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1; /* Place the pseudo-element behind the content */
+    margin: -2px; /* This should match the border width */
+    border-radius: inherit; /* Inherit border-radius from the parent */
+    background-image: linear-gradient(to right, #4c239e, #b99fef); /* Your gradient */
+    background-clip: padding-box; /* Clip the background to the inside edge of the border */
 }
