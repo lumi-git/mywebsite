@@ -21,12 +21,32 @@ import { onMount } from 'svelte';
     <div class="min-h-screen flex justify-center">
         <div class="w-2/3 mx-auto">
             <div class="flex flex-row w-full" />
+            
+
 
             <div class="flex flex-row w-full" >
                 <!-- left col -->
 
-                <TimelineItem  card_title="Thirs year of ESIR Developper engineering shool" card_desc = "At Rennes University"  
-                card_content = " During my years of engineering school, I learned how to developp a software from scratch, using the right tools.
+                <TimelineItem  card_title="Third year of ESIR Developper engineering shool" card_desc = "At Rennes University"  
+                card_content = " During my third year of engineering school, Learning about languages and software modeling gave me a lot of knowledge about how to developp a software."
+                
+                />
+                
+                <!--line column-->
+                <DividerTimeline content = "Now 2024"/>
+                <!--right column-->
+                <TimelineItem  card_title="professional contrat" card_desc = "At CapGemini Rennes"  
+                card_content = "During this last year of school, I will also work at capgemini. I just started my time at capgemini. I will post later about my experience here.
+                "
+                />
+            </div>
+
+
+            <div class="flex flex-row w-full" >
+                <!-- left col -->
+
+                <TimelineItem  card_title="Second year of ESIR Developper engineering shool" card_desc = "At Rennes University"  
+                card_content = " During my second year of engineering school, I learned how to developp a software from scratch, using the right tools.
                 I also learned the goods and bads ways of doing things by leaning for example devOps methodes.
                 I also learned how to work in a team and how to manage a project, that are notions as important as knowing how to develop.
                 "
@@ -42,7 +62,6 @@ import { onMount } from 'svelte';
                 "
                 />
             </div>
-
 
             <div class="flex flex-row w-full" >
                 <!-- left col -->
@@ -96,6 +115,23 @@ import { onMount } from 'svelte';
     <div class  = "block my-10" >
 
         <div class = "card bg-slate-700 rounded m-auto ml-4 mr-4 p-5">
+            <div class = "text-3xl font-extrabold">Company experience</div>
+            <div class = "text-3xl text-center mb-2 rounded bg-slate-800  shadow-lg ">2024</div>
+            <clr class = "p-2 text-center text-3xl duration-700 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500  to-cyan-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-200 hover:to-cyan-500  transition-color ">Professional contrat at CapGemini Rennes</clr>
+
+            <div class = "grid my-5 text-center ">  <MapPinIcon class = "m-auto"/>  <p class = "mx-10 text-xl"> At CapGemini Rennes </p></div>  
+            <div class = "card-body "> During this last year of school, I will also work at capgemini. I just started my time at capgemini. I will post later about my experience here.
+                
+        </div>
+            
+        </div>
+
+
+    </div>
+
+    <div class  = "block my-10" >
+
+        <div class = "card bg-slate-700 rounded m-auto ml-4 mr-4 p-5">
             <div class = "text-3xl font-extrabold"> Internship</div>
             <div class = "text-3xl text-center mb-2 rounded bg-slate-800  shadow-lg ">2023</div>
             <clr class = "p-2 text-center text-3xl duration-700 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500  to-cyan-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-200 hover:to-cyan-500  transition-color ">Internship at LCSB (Luxembourg center for system biomedecine)</clr>
@@ -116,11 +152,11 @@ import { onMount } from 'svelte';
 
         <div class = "card bg-slate-700 rounded m-auto ml-4 mr-4 p-5">
             <div class = "text-3xl font-extrabold"> Next Degree  </div>
-            <div class = "text-3xl text-center mb-2 rounded bg-slate-800  shadow-lg ">2023</div>
+            <div class = "text-3xl text-center mb-2 rounded bg-slate-800  shadow-lg ">2024</div>
             <clr class = "p-2 text-center text-3xl duration-700 text-transparent bg-clip-text bg-gradient-to-r from-cyan-500  to-cyan-500 hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-emerald-200 hover:to-cyan-500  transition-color ">Second year of ESIR Developper engineering shool</clr>
 
             <div class = "grid my-5 text-center ">  <MapPinIcon class = "m-auto"/>  <p class = "mx-10 text-xl"> At Rennes University </p></div>  
-            <div class = "card-body ">During my year of engineering school, I learned how to developp a software from scratch, using the right tools.
+            <div class = "card-body ">During my third year of engineering school, I learned how to developp a software from scratch, using the right tools.
             I also learned the goods and bads ways of doing things by leaning for example devOps methodes.
             I also learned how to work in a team and how to manage a project, that are notions as important as knowing how to develop.
         </div>
