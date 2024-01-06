@@ -16,7 +16,7 @@ onMount(() => {
 
 
 
-<h2 class = "text-center text-2xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">QuickQR</h2>
+<h2 class = "text-center text-2xl text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 mt-5 mb-5">Roombat Simulator</h2>
 
 
 
@@ -32,13 +32,11 @@ onMount(() => {
 
 
 
-    <a href = "https://quickqr.ronantremoureux.fr/" target = "_blank" rel="noreferrer noopener" class = "text-5xl p-5 bg-zinc-800 rounded-lg drop-shadow-xl hover:scale-[1.05]">Click here to try quickQR !</a>
+    <a href = "https://robot.ronantremoureux.fr/" target = "_blank" rel="noreferrer noopener" class = "text-5xl p-5 bg-zinc-800 rounded-lg drop-shadow-xl hover:scale-[1.05]">Click here to try the simulator !</a>
 
 
 
 </div>
-
-
 
 
 

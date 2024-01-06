@@ -53,12 +53,11 @@
     <a href = https://next.ronantremoureux.fr class = "btn  m-6" target = "_blank" rel="noreferrer noopener">Visit it !</a>
 </div>
 
+
 <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
 <div class = "items-center card bg-opacity-60 rounded-2xl w-1/2 m-auto p-5 min-w-fit border">
-    <h1 class = " text-7xl  m-6" >Next.js app</h1>
-    <p class = " "> Testing Next.js in a simple website. Discovering the technology</p>
-    <a href = https://next.ronantremoureux.fr class = "btn  m-6" target = "_blank" rel="noreferrer noopener">Visit it !</a>
+    <h1 class = " text-7xl  m-6" >Roomba simulator sandbox</h1>
+    <p class = " "> A robot sandbox simulator </p>
+    <a href = https://robot.ronantremoureux.fr class = "btn  m-6" target = "_blank" rel="noreferrer noopener">Visit it !</a>
 </div>
-
-<div class="divider w-20 m-auto mt-20 mb-20"></div> 
