@@ -1,6 +1,9 @@
 <script lang="ts">
     import GameBox from '$lib/GameBox.svelte';
     import { onMount } from 'svelte';
+    import { Game } from "@ronantmx/gamescript/src/Game"; 
+
+    
 
 	function setUrl(){
 		let bar = document.getElementsByClassName("NavUrl");
