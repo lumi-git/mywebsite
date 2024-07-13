@@ -38,6 +38,7 @@ export class MyEnemy extends GameObject{
             direction.selfScalMul(0.01);
             this.getTransform().setPosition(this.getTransform().getPosition().add(direction));
         }
+        
     }
 
     onCollision(collider: ColliderComponent): void {

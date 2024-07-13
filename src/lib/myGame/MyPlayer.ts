@@ -39,4 +39,20 @@ export class MyPlayer extends GameObject{
         }*/
     }
 
+    update(p: import("p5"), dt: number): void {
+        super.update(p, dt);
+        if(this.getTransform().getPosition().getX() < 0){
+            this.getTransform().setPosition(new Vector2(0, this.getTransform().getPosition().getY()));
+        }
+        if(this.getTransform().getPosition().getY() < 0){
+            this.getTransform().setPosition(new Vector2(this.getTransform().getPosition().getX(), 0));
+        }
+        if(this.getTransform().getPosition().getX() > this.terrain.getTransform().getScale().getX()){
+            this.getTransform().setPosition(new Vector2(this.terrain.getTransform().getScale().getX(), this.getTransform().getPosition().getY()));
+        }
+        if(this.getTransform().getPosition().getY() > this.terrain.getTransform().getScale().getY()){
+            this.getTransform().setPosition(new Vector2(this.getTransform().getPosition().getX(), this.terrain.getTransform().getScale().getY()));
+        }
+    }
+
 }
