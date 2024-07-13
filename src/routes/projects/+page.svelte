@@ -60,6 +60,18 @@
 
     <div class="divider w-20 m-auto mt-20 mb-20"></div> 
 
+    <div data-aos="slide-right"> 
+        <div class = "items-center text-center c3   bg-opacity-60   rounded-2xl  w-1/2 m-auto p-5 min-w-fit hover:scale-[1.01] duration-100 shadow-black shadow-sm">
+            <img src = "javascriptLogo.png" class = " flex justify-center w-10 " alt = "C++"/>
+            
+            <h1 class = "tc1 text-3xl sm:text-7xl bg-clip-text bg-gradient-to-r from-emerald-200 to-cyan-500 m-6" >GameScript</h1>
+            <p class = "tc1 text-center">A javascript/typescript optimized game library</p>
+            <a href = "/projects/gamescript" class = "btn  m-6">About it </a>
+        </div>
+    </div>
+
+    <div class="divider w-20 m-auto mt-20 mb-20"></div> 
+
     <div data-aos="slide-left"> 
         <a href = "/projects/PyGine">
         <div class = "items-center text-center c1 bg-opacity-60 rounded-2xl w-1/2 m-auto p-5 min-w-fit hover:scale-[1.01] duration-100 shadow-black shadow-sm">
@@ -124,7 +136,7 @@
             <div>
                 <p class = "tc1 text-center">A simple demo - Dot connection lead by p5 library in JS</p>
             </div>
-            <a href = "/projects/P5Connections" class = "btn  m-6">Try it </a>
+            <a href = "/projects/P5Connections" class = "btn m-6">Try it </a>
         </div>
     </div>
 

@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 @media (min-width: 1026px) {
     #fadeshow2 { display: none; }
 
