@@ -23,7 +23,7 @@ export class MyPlayer extends GameObject{
         this.getTransform().setScale(new Vector2(100,100));
         this.addDrawComponent(new DrawElipseComponent(this, "blue"));
         this.tagComponent = new DrawTextComponent(this);
-        this.tagComponent.setText("Move with the arrows ! 0 points");
+        this.tagComponent.setText("Move with the arrows");
         this.tagComponent.setSize(30);
         this.tagComponent.setColor("white");
         this.addDrawComponent( this.tagComponent)
