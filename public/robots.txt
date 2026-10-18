@@ -1,0 +1,5 @@
+# ronantremoureux.fr: every crawler is welcome, including AI search assistants.
+User-agent: *
+Allow: /
+
+Sitemap: https://ronantremoureux.fr/sitemap.xml

@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "description": "Ronan Tremoureux, software specialist at nablify in Luxembourg: cloud, DevOps, automation, and HPC pipelines for engineering and science."
+  },
+  "nav": {
+    "about": "Who I am",
+    "work": "Work",
+    "education": "Education",
+    "projects": "Projects",
+    "skills": "Skills",
+    "talk": "Get in touch",
+    "menu": "Menu",
+    "theme": "Switch between light and dark theme",
+    "home": "Ronan Tremoureux, back to top",
+    "close": "Close menu"
+  },
+  "hero": {
+    "title": "Software engineer",
+    "sub": "Building practical tools for engineering and science at nablify. Based in Luxembourg.",
+    "place": "Fentange, Luxembourg",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "more": "More"
+  },
+  "about": {
+    "title": "Who I am",
+    "what": "An <b>engineer first</b>, a <b>software specialist</b> by trade.",
+    "text": "I work at <strong>nablify</strong>, an engineering and scientific‑computing company in Fentange, Luxembourg, where I build practical, user‑centric solutions that streamline engineering and scientific processes. I trained in <strong>electrical engineering</strong> before <strong>software engineering at ESIR</strong>, Rennes University, so I read a system from the hardware up."
+  },
+  "work": {
+    "title": "Work",
+    "items": [
+      {
+        "tag": "2024 – now",
+        "title": "Software specialist, nablify",
+        "where": "Fentange, Luxembourg",
+        "points": [
+          "<b>Practical, user‑centric solutions</b> that streamline engineering and scientific processes",
+          "<b>Cloud, DevOps, and automation</b>: Python, Docker, GitLab CI/CD, Julia, PostgreSQL, Google Cloud"
+        ]
+      },
+      {
+        "tag": "2023 – 2024",
+        "title": "Apprentice software engineer, Capgemini",
+        "where": "Rennes, France",
+        "points": [
+          "<b>Software engineering in an enterprise team</b>, in alternation with the final year of engineering school"
+        ]
+      },
+      {
+        "tag": "2023",
+        "title": "Intern, LCSB",
+        "where": "University of Luxembourg",
+        "points": [
+          "<b>Research software</b> at the Luxembourg Centre for Systems Biomedicine",
+          "<b>Python, Bash, Docker, and GitLab webhooks</b>: tooling and automation for the lab’s IT projects"
+        ]
+      },
+      {
+        "tag": "2021",
+        "title": "Intern, Schneider Electric",
+        "where": "Chartres‑de‑Bretagne, France",
+        "points": [
+          "<b>Simulation software</b> for connected circuit breakers: current, voltage, and measured power",
+          "Connected to a <b>PLC and an HMI</b>"
+        ]
+      },
+      {
+        "tag": "2019 – 2023",
+        "title": "Summer jobs, GEFA laboratory",
+        "where": "Châteaugiron, France",
+        "points": [
+          "<b>Team work and time management</b> in a professional lab"
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "items": [
+      {
+        "tag": "2021 – 2024",
+        "title": "Engineering degree in software engineering, ESIR",
+        "where": "Rennes University",
+        "points": [
+          "<b>Software modelling and language engineering</b>",
+          "<b>DevOps methods</b>, team work, and project management",
+          "Graduated in 2024"
+        ]
+      },
+      {
+        "tag": "2019 – 2021",
+        "title": "DUT in electrical engineering",
+        "where": "Rennes University",
+        "points": [
+          "<b>Signal maths and physics</b>",
+          "<b>Industrial automation and embedded programming</b> in C and Python",
+          "Where I taught myself most of my programming"
+        ]
+      },
+      {
+        "tag": "2019",
+        "title": "Baccalauréat STI2D, SI and EE",
+        "where": "Bréquigny high school, Rennes",
+        "points": [
+          "<b>First programming</b>, electronics, energy, and engineering sciences"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "close": "Close",
+    "code": "Code",
+    "try": "Try it",
+    "npm": "npm",
+    "items": [
+      {
+        "tag": "TypeScript · Langium",
+        "title": "Roomba simulator",
+        "text": "A <strong>robot sandbox</strong> driven by a <strong>language built from scratch</strong> with Langium."
+      },
+      {
+        "tag": "Svelte",
+        "title": "quickQR",
+        "text": "A <strong>QR code generator written from scratch</strong>: no library, ultra‑light."
+      },
+      {
+        "tag": "TypeScript · p5.js",
+        "title": "GameScript",
+        "text": "A <strong>game library</strong> with physics and graphics, published on npm as <strong>@ronantmx/gamescript</strong>."
+      },
+      {
+        "tag": "Python",
+        "title": "PyGine",
+        "text": "A <strong>Python game engine</strong>, with demos: minesweeper, quadtree and spatial‑hash collisions."
+      },
+      {
+        "tag": "Java",
+        "title": "While compiler",
+        "text": "A <strong>compiler for the While language</strong>, built by a team of four."
+      },
+      {
+        "tag": "C++",
+        "title": "Ant farm",
+        "text": "An <strong>ant colony simulation</strong> with graphics, from the first year of engineering school."
+      },
+      {
+        "tag": "Web",
+        "title": "ESIR mobility map",
+        "text": "A <strong>world map of past internships</strong> of ESIR students, with local contacts."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "languages": {
+      "title": "Languages",
+      "items": ["Python", "TypeScript", "JavaScript", "Java", "C", "C++", "C#", "Julia", "Bash", "HTML/CSS", "Svelte"]
+    },
+    "devops": {
+      "title": "DevOps & cloud",
+      "items": ["Docker", "Git", "GitLab CI/CD", "Kubernetes", "Google Cloud", "PostgreSQL"]
+    },
+    "tools": {
+      "title": "Tools",
+      "items": ["JetBrains IDEs", "VS Code", "Linux", "macOS", "Windows"]
+    },
+    "how": {
+      "title": "How I work",
+      "items": [
+        "<b>Team work</b>: trained at school, practised at Schneider Electric, LCSB, Capgemini, and nablify",
+        "<b>Organised</b>: the difference between a good and a bad project",
+        "<b>Curious</b>: always learning what is new on the market",
+        "<b>Problem solving</b>: analyse, plan, then execute",
+        "<b>Self‑taught</b>: most of my stack learned by building projects with it"
+      ]
+    },
+    "certs": {
+      "title": "Certifications",
+      "items": [
+        "<b>TOEIC 885/990</b>, B2: listening 455, reading 430",
+        "<b>Electrical habilitation</b> B01V"
+      ]
+    },
+    "comps": {
+      "title": "Competitions",
+      "items": [
+        "<a href=\"https://swerc.eu/2022/theme/scoreboard/public/\" target=\"_blank\" rel=\"noopener\"><b>SWERC 2023</b></a>, ICPC, Milan, with team PBI",
+        "<a href=\"https://breakthecode.soprasteria.fr\" target=\"_blank\" rel=\"noopener\"><b>Break The Code 2022</b></a>, Sopra Steria, Rennes",
+        "<a href=\"https://le-shaker.com/coding-battle/\" target=\"_blank\" rel=\"noopener\"><b>Coding Battle</b></a>, online, 2019 – 2022",
+        "<b>Battle Dev</b>, online, 2019"
+      ]
+    }
+  },
+  "contact": {
+    "lead": "Let’s talk.",
+    "note": "For work, a side project, or a question about anything on this page.",
+    "copied": "Copied",
+    "speak": "I speak",
+    "cv": "Download CV"
+  },
+  "footer": {
+    "source": "Source on GitHub",
+    "built": "Plain HTML, CSS, and JS. No framework, no tracking."
+  }
+}

@@ -1,0 +1,37 @@
+# Ronan Tremoureux
+
+> Ronan Tremoureux is a software specialist at nablify, an engineering and scientific-computing company in Fentange, Luxembourg. Trained in electrical engineering (DUT, Rennes University) and then software engineering (ESIR, Rennes University, graduated 2024), he builds practical, user-centric solutions that streamline engineering and scientific processes: cloud computing, DevOps, automation, and HPC pipelines.
+
+## Work
+- 2024–now: Software specialist, nablify, Fentange, Luxembourg (Python, Docker, GitLab CI/CD, Julia, PostgreSQL, Google Cloud).
+- 2023–2024: Apprentice software engineer, Capgemini, Rennes, in alternation with the final year of engineering school.
+- 2023: Intern, LCSB (Luxembourg Centre for Systems Biomedicine), University of Luxembourg: research software with Python, Bash, Docker, and GitLab webhooks.
+- 2021: Intern, Schneider Electric, Chartres-de-Bretagne: simulation software for connected circuit breakers (current, voltage, power), connected to a PLC and an HMI.
+- 2019–2023: Summer jobs, GEFA laboratory, Châteaugiron.
+
+## Education
+- 2021–2024: Engineering degree in software engineering, ESIR, Rennes University: software modelling, language engineering, DevOps methods, team work, project management.
+- 2019–2021: DUT in electrical engineering, Rennes University: signal maths and physics, industrial automation, embedded programming in C and Python.
+- 2019: Baccalauréat STI2D (SI, EE), Bréquigny high school, Rennes.
+
+## Projects
+- Roomba simulator (TypeScript, Langium): a robot sandbox driven by a language built from scratch. https://robot.ronantremoureux.fr/
+- quickQR (Svelte): a QR code generator written from scratch, no library. https://quickqr.ronantremoureux.fr/ and https://github.com/lumi-git/quickQR
+- GameScript (TypeScript, p5.js): a game library with physics and graphics, on npm as @ronantmx/gamescript. https://github.com/lumi-git/GameScript
+- PyGine (Python): a game engine with demos. https://github.com/PythonGameEngineDev/PyGine
+- While compiler (Java): a compiler for the While language, team of four. https://github.com/lumi-git/TLC_Project_While
+- Ant farm (C++): an ant colony simulation with graphics.
+- ESIR mobility map: a world map of past internships of ESIR students. https://esir-mobility-map.vercel.app/map
+
+## Skills
+- Languages: Python, TypeScript, JavaScript, Java, C, C++, C#, Julia, Bash, HTML/CSS, Svelte.
+- DevOps and cloud: Docker, Git, GitLab CI/CD, Kubernetes, Google Cloud, PostgreSQL.
+- Tools: JetBrains IDEs, VS Code, Linux, macOS, Windows.
+- Certifications: TOEIC 885/990 (B2); electrical habilitation B01V.
+- Competitions: SWERC 2023 (ICPC, Milan), Break The Code 2022 (Sopra Steria), Coding Battle 2019–2022, Battle Dev 2019.
+
+## Contact
+- Email: contact@ronantremoureux.fr
+- GitHub: https://github.com/lumi-git
+- LinkedIn: https://www.linkedin.com/in/ronan-tremoureux-139967233/
+- Website: https://ronantremoureux.fr/

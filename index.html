@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark"><!-- declared up front: Samsung Internet's forced dark mode then uses the page's own dark theme instead of inverting it -->
+  <title>Ronan Tremoureux — software specialist</title>
+  <meta name="description" data-i18n-content="meta.description" content="Ronan Tremoureux, software specialist at nablify in Luxembourg: cloud, DevOps, automation, and HPC pipelines for engineering and science.">
+  <link rel="canonical" href="https://ronantremoureux.fr/">
+  <meta name="theme-color" content="#A9AF99" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1E2219" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="https://ronantremoureux.fr/">
+  <meta property="og:title" content="Ronan Tremoureux — software specialist">
+  <meta property="og:description" content="Software specialist at nablify, Luxembourg. From circuits to clusters.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <!-- Facts for search engines and AI assistants -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://ronantremoureux.fr/#me",
+  "name": "Ronan Tremoureux",
+  "url": "https://ronantremoureux.fr/",
+  "email": "mailto:contact@ronantremoureux.fr",
+  "jobTitle": "Software specialist",
+  "worksFor": { "@type": "Organization", "name": "nablify", "url": "https://www.nablify.com/" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Fentange", "addressCountry": "LU" },
+  "nationality": { "@type": "Country", "name": "France" },
+  "alumniOf": [
+    { "@type": "CollegeOrUniversity", "name": "ESIR, Université de Rennes" },
+    { "@type": "CollegeOrUniversity", "name": "IUT de Rennes, Université de Rennes" }
+  ],
+  "sameAs": [
+    "https://github.com/lumi-git",
+    "https://www.linkedin.com/in/ronan-tremoureux-139967233/"
+  ],
+  "knowsLanguage": ["fr", "en"],
+  "knowsAbout": [
+    "Software engineering", "Cloud computing", "DevOps", "CI/CD", "Automation", "High-performance computing",
+    "Python", "TypeScript", "Java", "C++", "Julia", "Docker", "Kubernetes", "PostgreSQL",
+    "Compilers", "Language engineering", "Game engines", "Simulation", "Electrical engineering"
+  ]
+}
+  </script>
+  <script>
+    // Apply the saved theme before first paint.
+    try { const t = localStorage.getItem('rt-theme'); if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t; } catch {}
+  </script>
+  <!-- Render-blocking on purpose: no flash of unstyled text -->
+  <link rel="stylesheet" href="/src/styles.css">
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <svg hidden aria-hidden="true">
+    <symbol id="linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></symbol>
+    <symbol id="github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+  </svg>
+
+  <header id="hdr">
+    <nav class="nav wrap" aria-label="Main">
+      <div class="nav-side left">
+        <a class="nav-link" href="#about" data-i18n="nav.about">Who I am</a>
+        <a class="nav-link" href="#work" data-i18n="nav.work">Work</a>
+        <a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a>
+      </div>
+      <a href="#top" class="brand" aria-label="Ronan Tremoureux, back to top" data-i18n-aria="nav.home">Ronan Tremoureux</a>
+      <div class="nav-side right">
+        <button type="button" class="icon-btn theme" id="theme" aria-label="Switch between light and dark theme" data-i18n-aria="nav.theme">
+          <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5Z"/></svg>
+          <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button type="button" class="icon-btn menu-btn" popovertarget="menu" aria-label="Menu" data-i18n-aria="nav.menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <a href="#contact" class="pill solid"><span data-i18n="nav.talk">Get in touch</span></a>
+      </div>
+    </nav>
+    <nav class="menu" id="menu" popover aria-label="Mobile">
+      <button type="button" class="menu-handle" popovertarget="menu" popovertargetaction="hide" aria-label="Close menu" data-i18n-aria="nav.close"></button>
+      <button type="button" class="icon-btn menu-close" popovertarget="menu" popovertargetaction="hide" aria-label="Close menu" data-i18n-aria="nav.close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <a href="#about" data-i18n="nav.about">Who I am</a>
+      <a href="#work" data-i18n="nav.work">Work</a>
+      <a href="#education" data-i18n="nav.education">Education</a>
+      <a href="#projects" data-i18n="nav.projects">Projects</a>
+      <a href="#skills" data-i18n="nav.skills">Skills</a>
+    </nav>
+  </header>
+
+  <main class="wrap" id="top">
+    <!-- First screen: the headline, one quiet line under it, the chevron, and two quiet corners on its line (place and local time; the two profiles) -->
+    <div class="hero">
+      <h1 data-i18n="hero.title">Software engineer</h1>
+      <p class="hero-sub" data-i18n="hero.sub">Building practical tools for engineering and science at nablify. Based in Luxembourg.</p>
+      <p class="corner left"><span data-i18n="hero.place">Fentange, Luxembourg</span><time id="clock"></time></p>
+      <a class="cue" href="#about" aria-label="More" data-i18n-aria="hero.more"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+      <p class="corner right"><a href="https://github.com/lumi-git" target="_blank" rel="noopener"><span data-i18n="hero.github">GitHub</span><span aria-hidden="true">&nbsp;↗</span></a><a href="https://www.linkedin.com/in/ronan-tremoureux-139967233/" target="_blank" rel="noopener"><span data-i18n="hero.linkedin">LinkedIn</span><span aria-hidden="true">&nbsp;↗</span></a></p>
+    </div>
+
+    <section class="block" id="about">
+      <h2 data-i18n="about.title">Who I am</h2>
+      <div>
+        <p class="what" data-i18n="about.what">An <b>engineer first</b>, a <b>software specialist</b> by trade.</p>
+        <p class="about" data-i18n="about.text">I work at <strong>nablify</strong>, an engineering and scientific‑computing company in Fentange, Luxembourg, where I build practical, user‑centric solutions that streamline engineering and scientific processes. I trained in <strong>electrical engineering</strong> before <strong>software engineering at ESIR</strong>, Rennes University, so I read a system from the hardware up.</p>
+      </div>
+    </section>
+
+    <section class="block" id="work">
+      <h2 data-i18n="work.title">Work</h2>
+      <ol class="caps">
+        <li class="cap"><div class="card-top"><span class="card-tag" data-i18n="work.items.0.tag">2024 – now</span></div><div><h3 data-i18n="work.items.0.title">Software specialist, nablify</h3><p class="where" data-i18n="work.items.0.where">Fentange, Luxembourg</p></div><ul class="list"><li data-i18n="work.items.0.points.0"><b>Practical, user‑centric solutions</b> that streamline engineering and scientific processes</li><li data-i18n="work.items.0.points.1"><b>Cloud, DevOps, and automation</b>: Python, Docker, GitLab CI/CD, Julia, PostgreSQL, Google Cloud</li></ul></li>
+        <li class="cap"><div class="card-top"><span class="card-tag" data-i18n="work.items.1.tag">2023 – 2024</span></div><div><h3 data-i18n="work.items.1.title">Apprentice software engineer, Capgemini</h3><p class="where" data-i18n="work.items.1.where">Rennes, France</p></div><ul class="list"><li data-i18n="work.items.1.points.0"><b>Software engineering in an enterprise team</b>, in alternation with the final year of engineering school</li></ul></li>
+        <li class="cap"><div class="card-top"><span class="card-tag" data-i18n="work.items.2.tag">2023</span></div><div><h3 data-i18n="work.items.2.title">Intern, LCSB</h3><p class="where" data-i18n="work.items.2.where">University of Luxembourg</p></div><ul class="list"><li data-i18n="work.items.2.points.0"><b>Research software</b> at the Luxembourg Centre for Systems Biomedicine</li><li data-i18n="work.items.2.points.1"><b>Python, Bash, Docker, and GitLab webhooks</b>: tooling and automation for the lab’s IT projects</li></ul></li>
+        <li class="cap"><div class="card-top"><span class="card-tag" data-i18n="work.items.3.tag">2021</span></div><div><h3 data-i18n="work.items.3.title">Intern, Schneider Electric</h3><p class="where" data-i18n="work.items.3.where">Chartres‑de‑Bretagne, France</p></div><ul class="list"><li data-i18n="work.items.3.points.0"><b>Simulation software</b> for connected circuit breakers: current, voltage, and measured power</li><li data-i18n="work.items.3.points.1">Connected to a <b>PLC and an HMI</b></li></ul></li>
+        <li class="cap"><div class="card-top"><span class="card-tag" data-i18n="work.items.4.tag">2019 – 2023</span></div><div><h3 data-i18n="work.items.4.title">Summer jobs, GEFA laboratory</h3><p class="where" data-i18n="work.items.4.where">Châteaugiron, France</p></div><ul class="list"><li data-i18n="work.items.4.points.0"><b>Team work and time management</b> in a professional lab</li></ul></li>
+      </ol>
+    </section>
+
+    <section class="block" id="education">
+      <h2 data-i18n="education.title">Education</h2>
+      <ol class="caps">
+        <li class="cap"><div class="card-top"><span class="card-tag" data-i18n="education.items.0.tag">2021 – 2024</span></div><div><h3 data-i18n="education.items.0.title">Engineering degree in software engineering, ESIR</h3><p class="where" data-i18n="education.items.0.where">Rennes University</p></div><ul class="list"><li data-i18n="education.items.0.points.0"><b>Software modelling and language engineering</b></li><li data-i18n="education.items.0.points.1"><b>DevOps methods</b>, team work, and project management</li><li data-i18n="education.items.0.points.2">Graduated in 2024</li></ul></li>
+        <li class="cap"><div class="card-top"><span class="card-tag" data-i18n="education.items.1.tag">2019 – 2021</span></div><div><h3 data-i18n="education.items.1.title">DUT in electrical engineering</h3><p class="where" data-i18n="education.items.1.where">Rennes University</p></div><ul class="list"><li data-i18n="education.items.1.points.0"><b>Signal maths and physics</b></li><li data-i18n="education.items.1.points.1"><b>Industrial automation and embedded programming</b> in C and Python</li><li data-i18n="education.items.1.points.2">Where I taught myself most of my programming</li></ul></li>
+        <li class="cap"><div class="card-top"><span class="card-tag" data-i18n="education.items.2.tag">2019</span></div><div><h3 data-i18n="education.items.2.title">Baccalauréat STI2D, SI and EE</h3><p class="where" data-i18n="education.items.2.where">Bréquigny high school, Rennes</p></div><ul class="list"><li data-i18n="education.items.2.points.0"><b>First programming</b>, electronics, energy, and engineering sciences</li></ul></li>
+      </ol>
+    </section>
+
+    <section class="block" id="projects">
+      <h2 data-i18n="projects.title">Projects</h2>
+      <ol class="cards">
+        <li class="card"><div class="card-top"><span class="card-tag" data-i18n="projects.items.0.tag">TypeScript · Langium</span></div><h3 data-i18n="projects.items.0.title">Roomba simulator</h3><p data-i18n="projects.items.0.text">A <strong>robot sandbox</strong> driven by a <strong>language built from scratch</strong> with Langium.</p><div class="card-links"><a href="https://robot.ronantremoureux.fr/" target="_blank" rel="noopener"><span data-i18n="projects.try">Try it</span><span aria-hidden="true">&nbsp;↗</span></a></div></li>
+        <li class="card"><div class="card-top"><span class="card-tag" data-i18n="projects.items.1.tag">Svelte</span></div><h3 data-i18n="projects.items.1.title">quickQR</h3><p data-i18n="projects.items.1.text">A <strong>QR code generator written from scratch</strong>: no library, ultra‑light.</p><div class="card-links"><a href="https://quickqr.ronantremoureux.fr/" target="_blank" rel="noopener"><span data-i18n="projects.try">Try it</span><span aria-hidden="true">&nbsp;↗</span></a><a href="https://github.com/lumi-git/quickQR" target="_blank" rel="noopener"><span data-i18n="projects.code">Code</span><span aria-hidden="true">&nbsp;↗</span></a></div></li>
+        <li class="card"><div class="card-top"><span class="card-tag" data-i18n="projects.items.2.tag">TypeScript · p5.js</span></div><h3 data-i18n="projects.items.2.title">GameScript</h3><p data-i18n="projects.items.2.text">A <strong>game library</strong> with physics and graphics, published on npm as <strong>@ronantmx/gamescript</strong>.</p><div class="card-links"><a href="https://github.com/lumi-git/GameScript" target="_blank" rel="noopener"><span data-i18n="projects.code">Code</span><span aria-hidden="true">&nbsp;↗</span></a><a href="https://www.npmjs.com/package/@ronantmx/gamescript" target="_blank" rel="noopener"><span data-i18n="projects.npm">npm</span><span aria-hidden="true">&nbsp;↗</span></a></div></li>
+        <li class="card"><div class="card-top"><span class="card-tag" data-i18n="projects.items.3.tag">Python</span></div><h3 data-i18n="projects.items.3.title">PyGine</h3><p data-i18n="projects.items.3.text">A <strong>Python game engine</strong>, with demos: minesweeper, quadtree and spatial‑hash collisions.</p><div class="card-links"><a href="https://github.com/PythonGameEngineDev/PyGine" target="_blank" rel="noopener"><span data-i18n="projects.code">Code</span><span aria-hidden="true">&nbsp;↗</span></a></div></li>
+        <li class="card"><div class="card-top"><span class="card-tag" data-i18n="projects.items.4.tag">Java</span></div><h3 data-i18n="projects.items.4.title">While compiler</h3><p data-i18n="projects.items.4.text">A <strong>compiler for the While language</strong>, built by a team of four.</p><div class="card-links"><a href="https://github.com/lumi-git/TLC_Project_While" target="_blank" rel="noopener"><span data-i18n="projects.code">Code</span><span aria-hidden="true">&nbsp;↗</span></a></div></li>
+        <li class="card"><div class="card-top"><span class="card-tag" data-i18n="projects.items.5.tag">C++</span></div><h3 data-i18n="projects.items.5.title">Ant farm</h3><p data-i18n="projects.items.5.text">An <strong>ant colony simulation</strong> with graphics, from the first year of engineering school.</p></li>
+        <li class="card"><div class="card-top"><span class="card-tag" data-i18n="projects.items.6.tag">Web</span></div><h3 data-i18n="projects.items.6.title">ESIR mobility map</h3><p data-i18n="projects.items.6.text">A <strong>world map of past internships</strong> of ESIR students, with local contacts.</p><div class="card-links"><a href="https://esir-mobility-map.vercel.app/map" target="_blank" rel="noopener"><span data-i18n="projects.try">Try it</span><span aria-hidden="true">&nbsp;↗</span></a></div></li>
+      </ol>
+    </section>
+    <!-- Phones: a tapped project opens here, a page over the blurred site (main.js fills it); the close button sits where the menu's does -->
+    <div class="project-view" id="projectView" popover role="dialog" aria-labelledby="projectTitle">
+      <div class="project-body">
+        <p class="card-top"><span class="card-tag"></span></p>
+        <h3 id="projectTitle"></h3>
+        <p class="project-text"></p>
+        <div class="card-links"></div>
+      </div>
+      <button type="button" class="icon-btn menu-close" popovertarget="projectView" popovertargetaction="hide" aria-label="Close" data-i18n-aria="projects.close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+
+    <section class="block" id="skills">
+      <h2 data-i18n="skills.title">Skills</h2>
+      <div class="groups">
+        <div class="group"><h3 data-i18n="skills.languages.title">Languages</h3><ul class="tags"><li data-i18n="skills.languages.items.0">Python</li><li data-i18n="skills.languages.items.1">TypeScript</li><li data-i18n="skills.languages.items.2">JavaScript</li><li data-i18n="skills.languages.items.3">Java</li><li data-i18n="skills.languages.items.4">C</li><li data-i18n="skills.languages.items.5">C++</li><li data-i18n="skills.languages.items.6">C#</li><li data-i18n="skills.languages.items.7">Julia</li><li data-i18n="skills.languages.items.8">Bash</li><li data-i18n="skills.languages.items.9">HTML/CSS</li><li data-i18n="skills.languages.items.10">Svelte</li></ul></div>
+        <div class="group"><h3 data-i18n="skills.devops.title">DevOps &amp; cloud</h3><ul class="tags"><li data-i18n="skills.devops.items.0">Docker</li><li data-i18n="skills.devops.items.1">Git</li><li data-i18n="skills.devops.items.2">GitLab CI/CD</li><li data-i18n="skills.devops.items.3">Kubernetes</li><li data-i18n="skills.devops.items.4">Google Cloud</li><li data-i18n="skills.devops.items.5">PostgreSQL</li></ul></div>
+        <div class="group"><h3 data-i18n="skills.tools.title">Tools</h3><ul class="tags"><li data-i18n="skills.tools.items.0">JetBrains IDEs</li><li data-i18n="skills.tools.items.1">VS Code</li><li data-i18n="skills.tools.items.2">Linux</li><li data-i18n="skills.tools.items.3">macOS</li><li data-i18n="skills.tools.items.4">Windows</li></ul></div>
+        <div class="group"><h3 data-i18n="skills.how.title">How I work</h3><ul class="list"><li data-i18n="skills.how.items.0"><b>Team work</b>: trained at school, practised at Schneider Electric, LCSB, Capgemini, and nablify</li><li data-i18n="skills.how.items.1"><b>Organised</b>: the difference between a good and a bad project</li><li data-i18n="skills.how.items.2"><b>Curious</b>: always learning what is new on the market</li><li data-i18n="skills.how.items.3"><b>Problem solving</b>: analyse, plan, then execute</li><li data-i18n="skills.how.items.4"><b>Self‑taught</b>: most of my stack learned by building projects with it</li></ul></div>
+        <div class="group"><h3 data-i18n="skills.certs.title">Certifications</h3><ul class="list"><li data-i18n="skills.certs.items.0"><b>TOEIC 885/990</b>, B2: listening 455, reading 430</li><li data-i18n="skills.certs.items.1"><b>Electrical habilitation</b> B01V</li></ul></div>
+        <div class="group"><h3 data-i18n="skills.comps.title">Competitions</h3><ul class="list"><li data-i18n="skills.comps.items.0"><a href="https://swerc.eu/2022/theme/scoreboard/public/" target="_blank" rel="noopener"><b>SWERC 2023</b></a>, ICPC, Milan, with team PBI</li><li data-i18n="skills.comps.items.1"><a href="https://breakthecode.soprasteria.fr" target="_blank" rel="noopener"><b>Break The Code 2022</b></a>, Sopra Steria, Rennes</li><li data-i18n="skills.comps.items.2"><a href="https://le-shaker.com/coding-battle/" target="_blank" rel="noopener"><b>Coding Battle</b></a>, online, 2019 – 2022</li><li data-i18n="skills.comps.items.3"><b>Battle Dev</b>, online, 2019</li></ul></div>
+      </div>
+    </section>
+
+    <section class="block contact" id="contact">
+      <div class="contact-intro">
+        <h2 class="contact-lead" id="contact-title" data-i18n="contact.lead">Let’s talk.</h2>
+        <p class="contact-note" data-i18n="contact.note">For work, a side project, or a question about anything on this page.</p>
+        <div class="contact-write">
+          <div class="contact-main">
+            <a class="email" href="mailto:contact@ronantremoureux.fr">contact@ronantremoureux.fr</a>
+            <span class="copied-note" role="status" aria-live="polite" data-i18n="contact.copied">Copied</span>
+          </div>
+        </div>
+        <!-- Hello, the site's language, stands out (CSS) -->
+        <div class="hello">
+          <p class="hello-tag" data-i18n="contact.speak">I speak</p>
+          <!-- Hovering a greeting shows "I speak" and the CV button in that language and the last one hovered stays (main.js); fixed per language, not in the locale file -->
+          <p class="greet"><span lang="en" data-speak="I speak" data-cv="Download CV" data-word="Hello">Hello</span> <span lang="fr" data-speak="Je parle" data-cv="Télécharger le CV" data-word="Bonjour">Bonjour</span></p>
+        </div>
+        <div class="contact-links">
+          <a class="pill line li" href="https://www.linkedin.com/in/ronan-tremoureux-139967233/" target="_blank" rel="noopener"><svg class="li-logo" role="img" aria-label="LinkedIn"><use href="#linkedin"/></svg><span aria-hidden="true">&nbsp;↗</span></a>
+          <a class="pill line" href="https://github.com/lumi-git" target="_blank" rel="noopener"><svg class="li-logo" role="img" aria-label="GitHub"><use href="#github"/></svg><span aria-hidden="true">&nbsp;↗</span></a>
+          <a class="pill line" href="/CV.pdf" download><span data-i18n="contact.cv">Download CV</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <span class="footer-brand">Ronan Tremoureux</span>
+    <div class="footer-text">
+      <ul class="meta">
+        <li>Fentange, Luxembourg</li>
+        <li><a href="https://github.com/lumi-git/mywebsite" target="_blank" rel="noopener"><span data-i18n="footer.source">Source on GitHub</span><span aria-hidden="true">&nbsp;↗</span></a></li>
+        <li data-i18n="footer.built">Plain HTML, CSS, and JS. No framework, no tracking.</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

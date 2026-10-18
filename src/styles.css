@@ -1,0 +1,326 @@
+@import '@fontsource-variable/sora';
+@import '@fontsource/ibm-plex-sans/400.css';
+@import '@fontsource/ibm-plex-sans/500.css';
+@import '@fontsource/ibm-plex-mono/400.css';
+@import '@fontsource/ibm-plex-mono/500.css';
+
+:root {
+  --bg: #A9AF99;        /* sage: the Marshall Emberton body */
+  --surface: #B6BCA7;
+  --line: #8E9480;
+  --field: #7C8370;
+  --fg: #1F231A;        /* grille black: headings, strong text, solid buttons */
+  --fg-2: #353B2C;
+  --accent: #4F3B10;    /* dark brass for text and focus rings on the sage: 4.7:1 (WCAG AA); dark mode uses --brass */
+  --brass: #D6B678;     /* the logo's brass, decorative, the same in both themes */
+  --on-accent: #1F231A; /* grille black on the brass */
+  --display: 'Sora Variable', 'Segoe UI', system-ui, sans-serif;
+  --body: 'IBM Plex Sans', 'Helvetica Neue', system-ui, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --header-h: 76px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1E2219; --surface: #2A2F22; --line: #3B4132; --field: #4C5341; --fg: #E8EADF;
+    --fg-2: #B8BDA8; --accent: var(--brass); color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1E2219; --surface: #2A2F22; --line: #3B4132; --field: #4C5341; --fg: #E8EADF;
+  --fg-2: #B8BDA8; --accent: var(--brass); color-scheme: dark;
+}
+:root[data-theme="light"] { color-scheme: light; }
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+:root { padding-block: env(safe-area-inset-top, 0px) env(safe-area-inset-bottom, 0px); }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; scroll-padding-top: var(--header-h); scroll-snap-type: y mandatory; overflow-x: clip; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; } /* one section per screen */
+.hero, .block { scroll-snap-align: start; }
+footer { scroll-snap-align: end; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.55; padding-inline: 24px; -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+:is(a, button):focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
+.wrap { max-width: 1120px; margin-inline: auto; }
+.list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; color: var(--fg-2); }
+.list b { font-weight: 500; color: var(--fg); }
+.list li { position: relative; padding-left: 18px; }
+.list li::before { content: ""; position: absolute; left: 2px; top: .68em; width: 5px; height: 5px; border-radius: 50%; background: var(--fg); } /* a small dot in the text colour */
+.list a { text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
+.list a:hover { text-decoration-color: var(--fg); }
+
+/* Header: the name as wordmark; a hairline once the big name scrolls under it (header.compact, main.js) */
+header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; margin-inline: -24px; padding-inline: 24px; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid transparent; transition: border-color .3s; }
+header.compact { border-bottom-color: var(--line); }
+.nav { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; min-height: var(--header-h); font-size: 15px; }
+.nav-side { display: flex; gap: clamp(16px, 2vw, 28px); align-items: center; white-space: nowrap; }
+.nav-side.right { justify-content: flex-end; }
+.nav-link { color: color-mix(in srgb, var(--fg) 80%, var(--bg)); font-weight: 500; transition: color .15s; } /* lighter than the name and the button, still 4.8:1 on the sage */
+.nav-link:hover { color: var(--fg); }
+.brand { display: flex; align-items: center; min-height: 44px; font-family: var(--display); font-weight: 700; font-size: 19px; letter-spacing: -0.025em; color: var(--fg); white-space: nowrap; }
+
+.pill { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 22px; border-radius: 999px; font-weight: 500; font-size: 15px; white-space: nowrap; transition: background .15s, color .15s, border-color .15s; }
+button.pill { border: 0; font-family: inherit; cursor: pointer; }
+.pill.solid { background: var(--fg); color: var(--bg); }
+.pill.solid:hover { background: var(--brass); color: var(--on-accent); }
+.pill.line { border: 1px solid var(--fg); color: var(--fg); }
+.pill.line:hover { background: var(--fg); color: var(--bg); }
+.icon-btn { display: inline-flex; align-items: center; justify-content: center; flex: none; width: 44px; height: 44px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--fg) 60%, transparent); background: none; color: var(--fg); cursor: pointer; } /* the ring reads on the sage: 3:1 */
+.icon-btn:hover { border-color: var(--fg); }
+.icon-btn:focus-visible, .pill:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; } /* a ring that follows the round shape */
+@media (hover: none) { .pill:active { scale: .97; } .icon-btn:active { scale: .94; } .greet span:active { opacity: .6; } } /* pressed states instead of the tap flash */
+.icon-btn svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+.menu-btn { display: none; }
+.theme .sun { display: none; }
+:root[data-theme="dark"] .theme .sun { display: block; }
+:root[data-theme="dark"] .theme .moon { display: none; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme .sun { display: block; }
+  :root:not([data-theme="light"]) .theme .moon { display: none; }
+}
+@supports not selector(:popover-open) { [popover] { display: none; } } /* no popover API (Chromium <114, Firefox <125): without the UA rule the menu would sit open in the header; main.js toggles .open instead */
+
+/* Hero: the headline and one quiet line, centred; the chevron at the bottom with a quiet detail in each corner on its line */
+.hero { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: calc(100svh - var(--header-h) - env(safe-area-inset-top, 0px)); padding-block: 48px 120px; }
+h1 { margin: 0; font-family: var(--display); font-weight: 700; font-size: clamp(44px, 7vw, 100px); line-height: 1.02; letter-spacing: -0.04em; word-spacing: .05em; font-kerning: normal; font-optical-sizing: auto; text-wrap: balance; } /* tight tracking: the word gap gets a little back */
+.hero-sub { margin: 28px auto 0; max-width: 90ch; font-size: clamp(18px, 1.6vw, 23px); line-height: 1.45; color: var(--fg-2); text-wrap: balance; } /* one line on desktop: what, where */
+.cue { position: absolute; bottom: 20px; left: 0; right: 0; margin-inline: auto; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: var(--fg-2); transition: color .25s; } /* the chevron alone: the bob says scroll */
+.cue svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; transition: stroke .25s; }
+.cue:hover { color: var(--fg); }
+.cue:hover svg { stroke: var(--brass); }
+.corner { position: absolute; bottom: 30px; margin: 0; display: flex; align-items: center; gap: 12px; font: 400 13px var(--mono); color: var(--fg-2); } /* place and local time (main.js) left, the two profiles right */
+.corner.left { left: 0; }
+.corner.right { right: 0; }
+.corner > * + *:not(:empty)::before { content: "·"; margin-right: 12px; color: var(--brass); } /* the time stays silent without JS */
+.corner a:hover { color: var(--fg); }
+
+/* Intro sequence: the headline, its line, the chevron, the corners */
+@media (prefers-reduced-motion: no-preference) {
+  h1 { animation: rise 1.2s cubic-bezier(.16, 1, .3, 1) .2s both; }
+  .hero-sub { animation: rise 1s cubic-bezier(.16, 1, .3, 1) .7s both; }
+  .cue { animation: rise .9s cubic-bezier(.16, 1, .3, 1) 1.4s both; }
+  .corner { animation: rise .9s cubic-bezier(.16, 1, .3, 1) 1.7s both; }
+  .cue svg { animation: drop 3.2s cubic-bezier(.37, 0, .63, 1) 2.3s infinite; } /* easeInOutSine: a soft, even bob */
+}
+@keyframes drop { 50% { translate: 0 6px; } }
+@keyframes rise { from { opacity: 0; translate: 0 .45em; filter: blur(10px); } }
+
+/* Sections: name left, content right, one screen each */
+.block { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3fr); align-content: center; gap: 48px; min-height: calc(100svh - var(--header-h)); border-top: 1px solid var(--line); padding-block: clamp(32px, 6vh, 56px); }
+@media (min-width: 901px) { .block:not(.contact) { align-items: first baseline; } } /* each title sits on the first line of its content */
+.block h2 { margin: 0; font-family: var(--display); font-weight: 600; font-size: clamp(28px, 2.6vw, 38px); letter-spacing: -0.025em; line-height: 1.2; text-wrap: balance; }
+.block h3 { margin: 0; font-family: var(--display); font-weight: 600; font-size: 21px; letter-spacing: -0.01em; line-height: 1.3; }
+/* About: one big statement, then one plain paragraph */
+.what { margin: 0 0 32px; max-width: 28ch; font-family: var(--display); font-weight: 400; font-size: clamp(26px, min(3.4vw, 5.4vh), 50px); line-height: 1.3; letter-spacing: -0.02em; color: var(--fg-2); text-wrap: pretty; }
+.what b { font-weight: 600; color: var(--fg); }
+.about { margin: 0; max-width: 62ch; font-size: 20px; line-height: 1.6; color: var(--fg-2); text-wrap: pretty; }
+.about strong { font-weight: 500; color: var(--fg); }
+
+/* Rows (Work, Education): one full-width row per entry: dates, title and place, then its points */
+.caps { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.cap { display: grid; grid-template-columns: minmax(0, .7fr) minmax(0, 1.1fr) minmax(0, 2fr); gap: 24px; align-items: baseline; padding-block: clamp(20px, 4vh, 36px); border-bottom: 1px solid var(--line); }
+.cap .card-top { flex-direction: column; justify-content: flex-start; gap: 6px; }
+.cap h3 { font-size: clamp(21px, 2.8vh, 25px); }
+.where { margin: 4px 0 0; font-size: 14px; color: var(--fg-2); }
+
+/* Cards (Projects): tag, title, text, links */
+.cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.card { border-top: 2px solid var(--fg); padding-top: 18px; }
+.card-top { display: flex; justify-content: space-between; gap: 16px; font: 500 12px var(--mono); letter-spacing: 0.12em; text-transform: uppercase; }
+.card-tag { color: var(--accent); } /* the card's one gold thing */
+.card h3 { margin: 6px 0 12px; font-size: clamp(21px, 2.8vh, 25px); }
+.card p { margin: 0; color: var(--fg-2); }
+.card p strong { font-weight: 500; color: var(--fg); }
+.card-links { display: flex; gap: 16px; margin-top: 14px; font-weight: 500; font-size: 15px; color: var(--fg); }
+.card-links a:hover { text-decoration: underline; text-underline-offset: 4px; }
+/* Desktop: tag, title, text and links share rows across a line of cards, so every text starts at the same height */
+@media (min-width: 901px) { .card { display: grid; grid-row: span 4; grid-template-rows: subgrid; row-gap: 0; } .card .card-links { align-self: end; } }
+
+/* Skills: groups of tool tags (mono) and plain lists */
+.groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 48px; }
+.group h3 { margin-bottom: 12px; }
+.tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tags li { padding: 5px 12px; border: 1px solid var(--line); border-radius: 999px; font: 400 13px var(--mono); color: var(--fg-2); }
+
+/* Contact: lead, e-mail (copies on click), the languages, three links */
+.block.contact { grid-template-columns: minmax(0, 1fr); align-items: start; }
+.contact-intro { text-align: center; }
+.block .contact-lead { margin: 0 auto; max-width: 14ch; font-family: var(--display); font-weight: 700; font-size: clamp(36px, 4vw, 52px); line-height: 1.05; letter-spacing: -0.035em; color: var(--fg); text-wrap: balance; }
+.contact-note { margin: 20px auto 0; max-width: 40ch; color: var(--fg-2); text-wrap: pretty; }
+.contact-write { margin-top: 40px; }
+.contact-main { position: relative; display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+/* A click on the e-mail copies it (main.js): the underline fills gold and "Copied" rises under it for a moment */
+.copied-note { position: absolute; top: 100%; left: 50%; translate: -50% 0; font: 500 12px var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .25s cubic-bezier(.22, 1, .36, 1), translate .25s cubic-bezier(.22, 1, .36, 1); }
+#contact.copied .copied-note { opacity: 1; translate: -50% 8px; }
+#contact.copied .email::after { transform: scaleX(1); }
+.email { position: relative; display: inline-block; padding-block: 9px; margin-block: -9px; font-family: var(--display); font-weight: 700; font-size: clamp(24px, 2.2vw, 30px); letter-spacing: -0.03em; line-height: 1.1; overflow-wrap: anywhere; }
+/* Hover: a gold line draws under the address, left to right */
+.email::after { content: ""; position: absolute; left: 0; right: 0; bottom: 3px; height: 2px; background: var(--brass); transform: scaleX(0); transform-origin: left; transition: transform .6s cubic-bezier(.22, 1, .36, 1); }
+.email:is(:hover, :focus-visible)::after { transform: scaleX(1); }
+/* The languages: the greetings take turns (main.js); the site's language stands out */
+.hello { margin-top: 40px; }
+.hello-tag { margin: 0 0 12px; font: 500 12px var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.greet { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 20px; margin: 0; font-family: var(--display); font-size: clamp(20px, 1.8vw, 24px); letter-spacing: -0.02em; color: var(--fg-2); }
+.greet [lang="en"] { color: var(--fg); font-weight: 600; }
+.greet span { display: inline-grid; transition: color .45s cubic-bezier(.22, 1, .36, 1), font-weight .45s cubic-bezier(.22, 1, .36, 1); } /* the turn moves smoothly */
+.greet span::after { content: attr(data-word); height: 0; overflow: hidden; visibility: hidden; font-weight: 600; } /* reserves the bold width: no shift on hover */
+.greet .on { color: var(--fg); font-weight: 600; }
+html .greet.live span:not(.on) { color: var(--fg-2); font-weight: 400; }
+.hello-tag, .contact-links [data-i18n="contact.cv"] { display: inline-grid; } /* the old and the new word share one cell while one fades into the other (main.js) */
+.hello-tag > span, .contact-links [data-i18n="contact.cv"] > span { grid-area: 1 / 1; transition: opacity .45s cubic-bezier(.22, 1, .36, 1), translate .45s cubic-bezier(.22, 1, .36, 1); }
+.hello-tag .was, .contact-links .was { opacity: 0; translate: 0 -6px; }
+@starting-style { .hello-tag .now, .contact-links .now { opacity: 0; translate: 0 6px; } }
+.contact-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 40px; }
+.contact-links .pill { border-color: var(--line); }
+.contact-links .pill:hover { border-color: var(--fg); }
+.li-logo { display: block; width: 20px; height: 20px; fill: currentColor; }
+@media (min-width: 901px) { .block.contact { min-height: calc(100svh - var(--header-h) - 120px); align-content: center; } } /* last section: centred on what is left of the screen above the footer */
+
+footer { padding-block: 40px; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 16px 32px; border-top: 1px solid var(--line); font-size: 14px; color: var(--fg-2); } /* centred, like the nablify footer */
+.footer-brand { font-family: var(--display); font-weight: 700; font-size: 17px; letter-spacing: -0.02em; color: var(--fg); }
+.footer-text { font-family: var(--mono); font-size: 12px; }
+footer .meta { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; flex-wrap: wrap; column-gap: 24px; row-gap: 6px; }
+footer .meta li { position: relative; }
+footer .meta li + li::before { content: "·"; position: absolute; right: calc(100% + 9px); color: var(--brass); } /* in the gap, outside the layout */
+footer .meta li.line-start::before { content: none; } /* no dot at the start of a wrapped line (main.js) */
+footer .meta a:hover { color: var(--fg); }
+
+@media (prefers-reduced-motion: reduce) {
+  html, body { scroll-behavior: auto; }
+  .brand, .menu, .menu::backdrop, .email::after, .copied-note, .nav-side.right > *, .project-view, .cap h3 > button::after, .card h3 > button::after, .group h3 > button::after { transition: none !important; }
+  .greet span, .hello-tag > span, .contact-links [data-i18n="contact.cv"] > span { transition: none !important; }
+}
+
+@media (max-width: 900px) {
+  /* Header: the name alone, centred. The box is 56px throughout; on the hero the name is drawn 60% larger and 10px lower
+     (transforms only), as if in a 76px bar; header.compact (main.js) scales it back, so the layout never moves and the snap
+     positions hold. Its buttons move to a glass dock at the bottom, within thumb reach. */
+  :root { --header-h: 56px; }
+  .nav { display: flex; justify-content: center; }
+  .nav-side.left { display: none; }
+  .brand { --io: cubic-bezier(.65, 0, .35, 1); translate: 0 10px; scale: 1.6; transition: scale .8s var(--io), translate .8s var(--io); }
+  header.compact .brand { translate: 0 0; scale: 1; }
+  header { background: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
+  header::before { content: ""; position: absolute; inset: 0; z-index: -1; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); } /* blur on a layer: a blurred header would trap the fixed dock inside it */
+  .nav-side.right { display: contents; }
+  .nav-side.right > * { position: fixed; z-index: 20; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); box-shadow: 0 10px 30px -12px rgb(31 35 26 / .4); backdrop-filter: blur(16px) saturate(1.8); -webkit-backdrop-filter: blur(16px) saturate(1.8); transition: opacity .25s, translate .35s cubic-bezier(.22, 1, .36, 1); }
+  .nav-side.right > .icon-btn { left: 16px; width: 52px; height: 52px; background: color-mix(in srgb, var(--bg) 55%, transparent); border-color: color-mix(in srgb, var(--fg) 14%, transparent); }
+  .nav-side.right > .icon-btn svg { width: 22px; height: 22px; }
+  .nav-side.right > .theme { left: 76px; } /* one row: menu, theme */
+  .nav-side.right > .pill { right: 16px; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); backdrop-filter: none; -webkit-backdrop-filter: none; } /* solid, not glass: the call to action */
+  .menu-btn { display: inline-flex; }
+  .at-contact .nav-side.right > .pill { opacity: 0; translate: 0 16px; pointer-events: none; } /* already where it leads */
+  body:has(.menu:popover-open) .nav-side.right > *, body:has(.project-view:popover-open) .nav-side.right > * { opacity: 0; pointer-events: none; } /* the sheet or the view takes over the dock */
+
+  /* Menu: a sheet sliding up from the bottom; native popover, light-dismiss and Esc for free */
+  .menu { position: fixed; inset: auto 0 0; width: 100%; margin: 0; padding: 32px 24px calc(84px + env(safe-area-inset-bottom, 0px)); border: 0; border-top: 1px solid color-mix(in srgb, var(--fg) 12%, transparent); border-radius: 24px 24px 0 0; background: var(--bg); color: var(--fg); box-shadow: 0 -20px 50px -20px rgb(31 35 26 / .35); translate: 0 100%; transition: translate .45s cubic-bezier(.22, 1, .36, 1), display .45s allow-discrete, overlay .45s allow-discrete; }
+  .menu:popover-open { display: flex; flex-direction: column; translate: 0 0; }
+  @starting-style { .menu:popover-open { translate: 0 100%; } }
+  .menu, .project-view { z-index: 30; } /* Firefox has no `overlay`: on close the popover leaves the top layer at once and finishes its exit above the dock (20) rather than behind it */
+  .menu a { padding: 14px 0; font-family: var(--display); font-weight: 600; font-size: 20px; letter-spacing: -0.01em; }
+  .menu a + a { border-top: 1px solid var(--line); }
+  .menu-close { position: absolute; left: 16px; bottom: calc(16px + env(safe-area-inset-bottom, 0px)); width: 52px; height: 52px; } /* where the menu button was: the same thumb closes it */
+  .menu-handle { position: absolute; top: 0; left: 50%; translate: -50% 0; width: 96px; height: 36px; padding: 0; border: 0; background: none; cursor: pointer; } /* the handle: tap to close */
+  .menu-handle::before { content: ""; display: block; width: 36px; height: 4px; margin: 12px auto 0; border-radius: 4px; background: color-mix(in srgb, var(--fg) 20%, transparent); }
+  .menu-handle:active::before { background: color-mix(in srgb, var(--fg) 45%, transparent); }
+  .menu::backdrop { background: rgb(31 35 26 / 0); transition: background .45s, display .45s allow-discrete, overlay .45s allow-discrete; }
+  .menu:popover-open::backdrop { background: rgb(31 35 26 / .3); }
+  @starting-style { .menu:popover-open::backdrop { background: rgb(31 35 26 / 0); } }
+
+  /* Phones scroll inside the body, not the document: the scroller is fixed to the small viewport, so whatever Safari's bar does
+     the snap positions never move and a swipe settles once. If the bar still collapses, the space it frees is page colour under the dock. */
+  html { height: 100%; overflow: hidden; background: var(--bg); scroll-snap-type: none; }
+  body { position: fixed; top: 0; left: 0; width: 100%; height: 100vh; height: 100svh; /* vh first: without svh (Chromium <108) the fixed body had no height and the page could not scroll */ overflow: hidden auto; overscroll-behavior-y: contain; scroll-snap-type: y mandatory; scroll-padding-top: var(--header-h); scroll-behavior: smooth; }
+  /* Feed-like paging (main.js): a swipe on a section, however short, goes one section; the finger does not drag the page, so
+     Safari's bar is never toggled by the gesture. */
+  .hero, .block { touch-action: pan-x pinch-zoom; } /* no native vertical drag: main.js pages on touchend */
+  .hero, .block { scroll-snap-stop: always; } /* a fast flick never skips a section */
+
+  /* Hero: one screen, the name in the middle; the cue sits in the dock's row, in the free middle */
+  .hero { margin-inline: -24px; padding: 24px 24px 96px; } /* the hero covers the gutters, so an edge swipe pages too */
+  .cue { bottom: calc(24px + env(safe-area-inset-bottom, 0px)); }
+  .corner { display: none; } /* the dock lives there */
+
+  /* Sections are one small viewport tall (svh): snapping stays exact whether Safari's bar is out or not. The title and the
+     content follow each other at one vertical rhythm (--sgap, scaled by the screen height) and sit centred on the screen
+     together; what is left stays empty at the bottom, clear of the dock. */
+  .block { --sgap: clamp(24px, 20svh - 110px, 48px); /* 24px on an iPhone SE, 48px from a 790px-tall phone up */ grid-template-columns: minmax(0, 1fr); align-content: center; min-height: calc(100svh - var(--header-h)); margin-inline: -24px; padding: 24px 24px calc(88px + env(safe-area-inset-bottom, 0px)); gap: var(--sgap); border-top: 0; }
+  .block:not(.contact) > :last-child { display: flex; flex-direction: column; justify-content: flex-start; gap: var(--sgap); min-height: 0; }
+  #work, #education, #projects, #skills { align-content: start; } /* list sections start at the top: one title height under the header, whatever is open */
+  #work > .caps, #education > .caps, #projects > .cards, #skills > .groups { gap: 0; } /* the id beats the section rhythm gap */
+  .block h2 { font-size: 34px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; }
+  .block h3, .card h3 { font-size: 19px; }
+  .cap { grid-template-columns: minmax(0, 1fr); gap: 8px; padding-block: 18px; }
+  .cap .card-top { flex-direction: row; justify-content: flex-start; gap: 12px; }
+  .cap .list { margin-top: 4px; }
+  .cards { grid-template-columns: minmax(0, 1fr); }
+  .card { border-top: 1px solid var(--line); padding: 20px 0; }
+  .card h3 { margin-top: 0; margin-bottom: 0; }
+  .card h3 + p { margin-top: 12px; }
+  .groups { grid-template-columns: minmax(0, 1fr); border-top: 1px solid var(--line); }
+  .group { padding-block: 14px; border-bottom: 1px solid var(--line); }
+
+  /* Rows, cards and skill groups fold to their titles (main.js puts a button in each h3); a chevron says which way. The padding
+     only widens the touch target. One open per list. */
+  .cap h3 > button, .card h3 > button, .group h3 > button { display: flex; align-items: center; justify-content: space-between; gap: 16px; width: 100%; margin: -10px 0; padding: 10px 0; border: 0; background: none; font: inherit; letter-spacing: inherit; color: inherit; text-align: left; }
+  .cap h3 > button::after, .card h3 > button::after, .group h3 > button::after { content: ""; flex: none; width: 10px; height: 10px; margin-right: 12px; border: solid var(--fg-2); border-width: 0 1.5px 1.5px 0; rotate: 45deg; translate: 0 -3px; transition: rotate .3s cubic-bezier(.22, 1, .36, 1), translate .3s cubic-bezier(.22, 1, .36, 1); }
+  .cap h3 > button[aria-expanded="true"]::after, .group h3 > button[aria-expanded="true"]::after { rotate: 225deg; translate: 0 3px; }
+  .cap h3:has(> [aria-expanded="false"]) + .where { display: none; }
+  .cap > div:has(> h3 > [aria-expanded="false"]) + .list { display: none; }
+  .group h3:has(> button) { margin-bottom: 0; }
+  .group h3:has(> [aria-expanded="true"]) { margin-bottom: 12px; }
+  .group h3:has(> [aria-expanded="false"]) + :is(.tags, .list) { display: none; }
+  .card h3:has(> button) + p, .card h3:has(> button) ~ .card-links { display: none; } /* the list shows the title only: the text and links are in the view */
+  .card h3 > button::after { rotate: -45deg; translate: -3px 0; } /* points right: it opens a view, not a fold */
+  .card.visited h3 { font-weight: 400; color: var(--fg-2); } /* read: lighter in the list until the next load */
+
+  /* The project page: the project centred on the screen over the blurred site, a quick fade in and out; the close button where the menu's is */
+  .project-view { inset: 0; width: 100%; height: 100%; margin: 0; padding: 24px; border: 0; background: color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter: blur(18px) saturate(1.4); -webkit-backdrop-filter: blur(18px) saturate(1.4); color: var(--fg-2); place-items: center; opacity: 0; transition: opacity .2s, display .2s allow-discrete, overlay .2s allow-discrete; }
+  .project-view:popover-open { display: grid; opacity: 1; }
+  @starting-style { .project-view:popover-open { opacity: 0; } }
+  @supports not selector(:popover-open) { .menu.open { display: flex; flex-direction: column; translate: 0 0; } .project-view.open { display: grid; position: fixed; inset: 0; opacity: 1; } } /* no popover API: the open state main.js sets (no backdrop, no light dismiss; the close buttons and a tap on the view still close) */
+  .project-body { width: 100%; max-width: 480px; max-height: calc(100% - 160px); overflow-y: auto; }
+  .project-body .card-top { margin: 0; }
+  .project-body h3 { margin: 10px 0 18px; font-family: var(--display); font-weight: 600; font-size: 30px; letter-spacing: -0.025em; line-height: 1.15; color: var(--fg); text-wrap: balance; }
+  .project-body p { margin: 0; font-size: 19px; line-height: 1.5; text-wrap: pretty; }
+  .project-body strong { font-weight: 500; color: var(--fg); }
+  .project-body .card-links { margin-top: 24px; font-size: 17px; }
+  .project-view .menu-close { background: var(--bg); }
+
+  /* Contact: one screen: title, note, e-mail, the languages, then the three buttons */
+  .block.contact { grid-template-columns: minmax(0, 1fr); align-content: center; gap: 0; }
+  .block .contact-lead { max-width: none; font-size: 34px; letter-spacing: -0.03em; line-height: 1.1; }
+  .contact-note { margin-top: 12px; }
+  .contact-write, .hello, .contact-links { margin-top: var(--sgap); }
+  @media (max-height: 700px) { .contact-write, .hello, .contact-links { margin-top: 20px; } } /* iPhone SE: still one screen */
+  .hello-tag { margin-bottom: 4px; }
+  .greet { gap: 4px 16px; font-size: 15px; }
+  .greet span { position: relative; }
+  .greet span + span::before { content: "·"; position: absolute; left: -11px; color: var(--fg-2); font-weight: 400; }
+  .contact-links { gap: 10px; }
+  .contact-links .pill { flex: 1 1 0; min-height: 48px; } /* LinkedIn and GitHub share a row, the CV on its own below */
+  .contact-links .pill:last-child { flex-basis: 100%; }
+  footer { min-height: calc(100svh - var(--header-h)); margin-inline: -24px; padding: 24px 24px calc(88px + env(safe-area-inset-bottom, 0px)); justify-content: center; align-content: center; text-align: center; gap: 32px; scroll-snap-align: start; scroll-snap-stop: always; touch-action: pan-x pinch-zoom; } /* the last page: one screen like every section, its rows centred, clear of the dock */
+  footer .meta { justify-content: center; }
+  /* A tap leaves :hover on until the next tap (Android Chrome, Samsung Internet; iOS alike): hovered looks go back to rest, the :active press is the feedback */
+  @media (hover: none) { .pill.solid:hover { background: var(--fg); color: var(--bg); } .pill.line:hover { background: none; color: var(--fg); } .icon-btn:hover, .contact-links .pill:hover { border-color: var(--line); } }
+}
+@media (max-width: 560px) {
+  body { padding-inline: 16px; }
+  header, .hero, .block, footer { margin-inline: -16px; padding-inline: 16px; }
+  .brand { font-size: 17px; }
+  h1 { font-size: clamp(40px, 11vw, 48px); }
+  .hero-sub { font-size: 16px; }
+  .about { font-size: 15px; line-height: 1.45; }
+  .what { font-size: 19px; margin-bottom: 16px; text-wrap: balance; }
+  #about .what { font-size: clamp(26px, 7vw, 30px); } /* the statement reads as the section's lead, not a caption */
+  .greet { gap: 4px 12px; font-size: 19px; }
+  .pill { padding: 0 18px; }
+  footer .meta { flex-direction: column; align-items: center; gap: 6px; }
+  footer .meta li + li::before { content: none; }
+}
+
+/* Landscape phones: no snapping, sections free, dock in one row */
+@media (max-width: 900px) and (max-height: 500px) {
+  body { scroll-snap-type: none; }
+  .hero, .block, footer { min-height: 0; }
+}
