@@ -23,6 +23,7 @@ Vite is pinned to 6 because the machine runs Node 20.17.
 | `vite.config.js` | Writes `en.json` into the HTML so crawlers and no-JS visitors get English |
 | `public/` | `favicon.svg`, `CV.pdf`, `robots.txt`, `sitemap.xml`, `llms.txt` |
 | `CONTENT.md` | Map of everything the previous site said (SvelteKit, 2023–24, plus an unfinished Astro draft) and where each piece went. The facts reference |
+| `vercel.json` | Pins the Vercel build (Vite preset, `npm ci`, `dist/`) so stale project settings from the SvelteKit site cannot break it. Node 20 via `engines` in `package.json` |
 | `CNAME` | GitHub Pages test subdomain (test.ronantremoureux.fr, built from `main` root by Jekyll). Production is Vercel from `main`, output `dist/` |
 
 ## Owner decisions — do not undo

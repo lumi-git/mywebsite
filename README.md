@@ -15,7 +15,7 @@ npm run preview   # serve dist/ on http://localhost:4173
 
 ## Deploy
 
-`dist/` is the whole site: upload it to any static host. Vercel builds it from `main` (framework preset Vite, output `dist/`).
+`dist/` is the whole site: upload it to any static host. Vercel builds it from `main`; `vercel.json` pins the Vite preset, `npm ci`, and output `dist/` (Node 20 from `engines`).
 
 ## Edit
 
